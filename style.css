@@ -1,0 +1,126 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*/
+/* HTML5 display-role reset for older browsers */
+/*
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
+
+body{
+    padding-top: 70px;
+    font-size: 10px;
+}
+
+
+.fluid-row h3, .boxed-row h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4em;
+    padding: 15% 10% 0 15%; 
+    color: #fff;
+}
+
+h4{
+    font-size: 3em;
+    font-family: serif;
+    margin-bottom: 1em;
+}
+
+
+#top-video-loop{
+    min-height: 600px; 
+    background: url('../img/temp-keni-top.png') center top no-repeat;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+}
+
+
+
+#about_bkg{
+    min-height: 600px; 
+    background: url('../img/speech_live.jpg') center top no-repeat;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+
+}
+
+
+.boxed-row{
+    padding: 106px 150px;  
+    border: 1px solid red;
+}
+
+.boxed-row img{
+     width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+
+p span.separator::after { 
+    content: "–––––––––––";
+    letter-spacing: -2px;
+    line-height: 2em;
+}
+
+
+.boxed-row h5{
+    font-size: 2em; 
+    text-transform: uppercase;   
+    font-family: serif;
+    margin-bottom: 0;
+}
+
+.boxed-row p.about-caption{
+     width: 270px;  
+}
