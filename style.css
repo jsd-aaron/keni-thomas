@@ -339,7 +339,6 @@ p span.separator::after {
   -o-background-size: cover; 
   background-size: cover;
     border: 24px #fff solid;
-
 }
 
 h4.about_hdr{
@@ -353,9 +352,6 @@ h4.about_hdr{
     border-bottom: 1px solid #656e71;
     border-left: none;
     margin-bottom: 30px;
-
-
-        
 }
 
 #about p{
@@ -471,7 +467,81 @@ h6.book_title{
      margin-left: 75px;   
 }
 
-/* STRUCTURE */
+
+#music_bkg{
+    min-height: 662px;
+    background: url('../img/country_star.jpg') center top no-repeat;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+    border: 24px #fff solid;
+}
+
+
+.music-container{
+    width: 985px;  
+    margin: 0 auto;
+}
+
+
+.music_thumb{
+    width: 288px;
+    height: 288px;
+    float: left;
+}
+
+
+.music_thumb:first-child{
+    background-image: url('../img/Give-it-Away-180.jpg');
+}
+
+.music_thumb:nth-child(2){
+    background-image: url('../img/Gunslinger-180.jpg');
+    margin: 0 60px;
+}
+
+.music_thumb:nth-child(3){
+    background-image: url('../img/flags-of-our-fathers.jpg');
+}
+
+.music-container h5{
+    font-family: sans-serif;
+    font-size: 19px;
+    line-height: 26px;
+    color: #6d6e71;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 300px;
+}
+
+
+ul.album{
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+ul.album li.album_link{
+    display: inline;   
+    text-indent: none;
+    text-align: left;
+    margin-right: 37px;
+    font-size: 12px;
+    lin-height: 14px;
+    width: 50px;
+}
+
+
+li.album_link a:link, li.album_link a:visited{
+    color: #6d6e71;
+    border-bottom: 1px solid #6d6e71;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+/* PLAY BUTTON */
 
 .play_btn{
     border-radius: 50%;
