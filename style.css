@@ -1,62 +1,76 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-/*
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-*/
-/* HTML5 display-role reset for older browsers */
-/*
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-*/
-
 body{
     padding-top: 50px;
     font-size: 10px;
     z-index: 1;
     color: #6d6e71;
     background-color: #fff;
+    position: relative;
+}
+
+form p{
+     margin-bottom: 30px; 
+    
+}
+
+label{
+    font-weight: 100;
+    color: #2b6280;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+input{
+    background-color: #15374f;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #fff;
+    border-left: 0;
+    font-size: 17px;
+    line-height: 27px;
+    width: 100%;
+}
+
+input[type=submit] {
+    font-size: 17px;
+    line-height: 20px;
+    width: auto;
+    float: right;
+    letter-spacing: 1px;
+    padding: 0 0 5px 0;
+}
+
+
+::-webkit-input-placeholder {
+   color: #2b6280;
+    letter-spacing: 1px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #2b6280; 
+    letter-spacing: 1px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #2b6280; 
+    letter-spacing: 1px;
+}
+
+:-ms-input-placeholder {  
+   color: #2b6280;  
+    letter-spacing: 1px;
+}
+
+textarea{
+    background-color: #15374f;
+     border: 1px solid #fff;
+}
+
+.txt-area-p{
+     margin: 0;   
+}
+
+hr{
+    border-top: 1px solid #6d6e71; 
 }
 
 
@@ -66,15 +80,31 @@ body{
     font-size: 4em;
     padding: 15% 10% 0 15%; 
     color: #fff;
+    
+}
+
+#about h3{
+    font-family: serif;
 }
 
 h4{
-    font-size: 3em;
-    font-family: sans-serif;
-    margin-bottom: 1em;
+    font-size: 40px;
+    line-height: 53px;
+    font-family: serif;
+    margin-top: 0;
+    margin-bottom: 52px;
     text-align: center;
 }
 
+h6{
+    font-family: serif;
+    font-size: 40px;
+    line-height: 25px;
+}
+
+.image-replace{
+     margin-left: -9999px;   
+}
 
 /* NAVIGATION */
 .navbar-brand{
@@ -133,7 +163,13 @@ h4{
 
 #learn h4{
     text-align: left;
+    font-family: serif;
 }
+
+#motivate {
+     margin-top: 133px;   
+}
+
 
 .white_overlay{
     width: 30%;
@@ -197,7 +233,10 @@ p span.separator::after {
 }
 
 .boxed-row p.about-caption{
-     width: 270px;  
+     width: 350px;  
+    font-size: 17px;
+    line-height: 21px;
+    margin-top: 8px;
 }
 
 
@@ -295,6 +334,7 @@ p span.separator::after {
     line-height: 20px;
 }
 
+
 .carousel-caption{
     color:#fff;
     font-size: 25px;
@@ -315,15 +355,20 @@ p span.separator::after {
 }
 
 
+
 #client-logos p{
     font-size: 17px;
     line-height: 30px;
     text-align: center;   
 }
 
+
+
 #client-logos img{
     width: 115px;
     display: inline;
+    float: left;
+    position: relative;
 }
 
 #about .boxed-row{
@@ -492,27 +537,18 @@ h6.book_title{
 }
 
 
-.music_thumb:first-child{
-    background-image: url('../img/Give-it-Away-180.jpg');
-}
-
 .music_thumb:nth-child(2){
-    background-image: url('../img/Gunslinger-180.jpg');
     margin: 0 60px;
 }
 
-.music_thumb:nth-child(3){
-    background-image: url('../img/flags-of-our-fathers.jpg');
-}
 
 .music-container h5{
-    font-family: sans-serif;
+    font-family: sserif;
     font-size: 19px;
     line-height: 26px;
     color: #6d6e71;
     text-align: center;
     letter-spacing: 3px;
-    margin-top: 300px;
 }
 
 
@@ -537,8 +573,395 @@ li.album_link a:link, li.album_link a:visited{
     border-bottom: 1px solid #6d6e71;
     padding-bottom: 2px;
     text-decoration: none;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+li.album_link a:hover{
+    color: #cf122a;
+    border-bottom: 1px solid #cf122a;
+}
+
+li.album_link a:active, li.album_link a:focus{
+    color: #6d6e71;
+    border-bottom: 1px solid #6d6e71;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+#music_video_container{
+    border-left: 24px #fff solid;
+    border-right: 24px #fff solid;
+    height: 332px;
+    margin-top: 80px;
+}
+
+#music_video_container h4{
+    font-family: serif;
+    font-size: 40px;
+    line-height: 53px;
+}
+
+#music_video_container .col-md-3 {
+    height: 332px;
+    padding-top: 10%;
+    text-align: center;
+    color: #fff;
+    font-family: serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#music_video_container .col-md-3:nth-child(2){
+    background: url('../img/mgid-uma-video-mtv.jpg') center right no-repeat;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+
+#music_video_container .col-md-3:nth-child(3){
+    background: url('../img/0.jpg') center center no-repeat;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+
+}
+
+#music_video_container .col-md-3:nth-child(4){
+    background: url('../img/shrevport.jpg') center center no-repeat;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+
+}
+
+#music_video_container .col-md-3:nth-child(5){
+    background: url('../img/mexico.png') center center no-repeat;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+#news{
+    min-height: 277px;
+    background: url('../img/news_hdr.jpg')  no-repeat;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+    border: 24px #fff solid;
+    margin-top: 100px;
+}
+
+#news_calendar .boxed-row{
+     padding: 0px ;   
+}
+
+#news h3{
+     padding-top: 75px;   
+}
+
+#news_calendar{
+    height: 600px;
+    padding: 0;
+    border: none;
+    padding: 0;    
+}
+
+
+#blog_preview_container{
+    width: 72%;
+    height: 525px;
+    float: left;
+    margin: 0;
+}
+
+.blog_preview{
+    width: 295px;
+    height: 280px;
+    float: left;
+    position: relative;
+    margin-right: 17px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.blog_thumb_container{
+    width: 295px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.blog_preview img{
+    width: auto;
+    height: 100%;
+    margin-bottom: 0;
+    z-index: 2;
+}
+
+.blog_preview h5{
+    width: 295px;
+    font-size: 19px;
+
+}
+
+.blog_preview .play_btn{
+    margin-top: -130px;
+    margin-bottom: 85px;
+    position: relative;
+
+}
+
+#blog_preview_container .more-link{
+    text-align: right;
+    bottom: 0;
+    margin-right: 24px;
+}
+
+#blog_preview_container .more-link a:link{
+    color: #6d6e71;
+    border-bottom: 1px solid #6d6e71;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-weight: 200;
+    letter-spacing: 2px;    
+}
+
+#blog_preview_container .more-link a:hover{
+    color: #cf122a;
+    border-bottom: 1px solid #cf122a;
+}
+
+#blog_preview_container .more-link a:active, #blog_preview_container .more-link a:focus{
+    color: #6d6e71;
+    border-bottom: 1px solid #6d6e71;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+/* ellipsis */
+
+.clamped {
+    line-height: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+.clamped-2 {
+    /* Clamp to 2 lines, ie line-height x 2: */
+    max-height: 48px;
+}
+
+
+.ellipsis {
+    background: #fff;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+
+.fill {
+    background: #fff; 
+    height:100%;
+    position: absolute;
+    width: 100%;
+}
+
+/* end ellipsis */
+
+#calendar_container{
+    width: 27%;
+    font-family: serif;
+    font-weight: 200;
+    padding: 17px;
+    height: 600px;
+    float: left;
+    background-color: #eaeaea;  
+}
+
+#calendar_container h4{
+    font-family: serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#calendar_container ul{
+    list-style: none;
+    padding: 0;
+}
+
+.calendar_date{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    float: left;
+    width: 30%;
+}
+
+.calendar_location{
+    width: 68%;   
+    float: right;
+}
+
+.calendar_location p{
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.calendar_location p:nth-child(2){
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.calendar_item{
+     width: 100%;
+    clear: both;
+}
+
+.calendar_item p{
+     clear: both;   
+}
+
+#calendar_container hr{
+    clear: both;   
+}
+
+
+#calendar_container .more-link{
+    text-align: center;
+    clear: both;
+}
+
+
+#calendar_container .more-link a:link{
+    color: #6d6e71;
+    border-bottom: 1px solid #6d6e71;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-weight: 200;
+    letter-spacing: 2px;    
+}
+
+#calendar_container .more-link a:hover{
+    color: #cf122a;
+    border-bottom: 1px solid #cf122a;
+}
+
+#calendar_container .more-link a:active, #calendar_container .more-link a:focus{
+    color: #6d6e71;
+    border-bottom: 1px solid #6d6e71;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+footer{
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    background-color: #15374f;
+    margin-top: 50px;
+    min-height: 800px;
+    color: #fff;
+    border: 24px solid #fff;
+    padding: 100px 174px;
+    font-weight: 100;
+}
+
+.subhead{
+     font-family: serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin: 40px 0 5px 0;
+}
+
+.footer-separator::after{
+    content:"----------";
+    letter-spacing: -2px;
+}
+
+.copyright{
+    width: 100%;
+    height: 100px;
+    clear: both;
+    padding-top: 40px;
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 200;
+    bottom: 0;
+    background-color: #fff;
+    color: #6d6e71;
+}
+
+#footer-download{
+    margin-top: 197px;
+}
+
+#footer-download p{
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+footer a:link, footer a:visited{
+    color: #fff;
+    font-family: serif;
+    text-decoration: none;
     font-weight: 100;
     letter-spacing: 2px;
+}
+
+footer a:hover{
+    color: #cf122a;
+}
+
+footer a:active, footera:focus{
+   color: #fff;  
+}
+
+#footer-download a:link, #footer-download a:visited{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+#footer-download a:hover{
+    color: #cf122a;
+    border-bottom: 2px solid #cf122a;
+    
+}
+
+#footer-download a:active, #footer-download a:focus{
+   color: #fff;
+    border-bottom: 2px solid #fff;   
 }
 
 /* PLAY BUTTON */
@@ -554,15 +977,28 @@ li.album_link a:link, li.album_link a:visited{
 
 .play_btn:hover{
     background-color: rgba(255,255,255,1);
+    z-index: 6;
 }
 
 .glyphicon-play{
     color: #666666;
     font-size: 33px;
-    margin: 9px 0 0 14px
+    margin: 9px 0 0 14px;
+    text-align: center;
+    z-index: 6;
     
 }
 
 .glyphicon-play:hover{
     color: #cf122a;
+    text-align: center;
+    z-index: 6;
+}
+
+#music_video_container .glyphicon-play {
+     margin-left: 10px;   
+}
+
+.blog_preview .glyphicon-play{
+     margin-left: 5px;   
 }

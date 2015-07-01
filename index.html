@@ -9,44 +9,47 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet" >
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
   </head>
   
   <body>
   <header>
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+Menu +
       </button>
-        <a class="navbar-brand" href="#"><span class="hidden">Keni Thomas</span></a>
+        <a class="navbar-brand" href="#top"><span class="image-replace">Keni Thomas</span></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-     
-     
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/#learn">Learn More</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/#speaker">Speaker</a></li>
-        <li><a href="/#music">Music</a></li>
-        <li><a href="/#news_calendar">News</a></li>
-        <li><a href="/#news_calendar">Calendar</a></li>
-        <li><a href="/#store">Store</a></li>
-        <li><a href="/#contact">Contact</a></li>       
+    
+     <div id="navlist">
+    
+     <ul class="nav navbar-nav navbar-right">
+      <div id="top"></div> 
+        <li><a href="#learn">Learn More</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#speaker">Speaker</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#news_calendar">News</a></li>
+        <li><a href="#news_calendar">Calendar</a></li>
+        <li><a href="#store">Store</a></li>
+        <li><a href="#contact">Contact</a></li>       
+        
       </ul>
+      </div>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
@@ -62,7 +65,7 @@
     
 </div>
 </header>
-<div class="container-fluid">
+<div id="learnmore" class="container-fluid">
     
     <div id="learn_bkg" class="row fluid-row" >
         <h3>redefine your understanding of what it means to lead the way</h3>
@@ -76,13 +79,13 @@
         
             <div class="col-md-7">
                 <h4>See yourslef as important, <br/>and you will begin to live up to it</h4>
-                <img src="../img/HappyPeople.jpg" alt="two people with signed copies of Keni Thomas's book">
+                <img src="img/HappyPeople.jpg" alt="two people with signed copies of Keni Thomas's book">
                 <p><span class="separator"></span></p>
                 <h5>Inspire Your Audience</h5>
                 <p class="about-caption">Inspire and influence your audience to see themselves as vital to mission success</p>
            
                 <div class="violator">
-                <img src="../img/gift.svg" alt="free gift">
+                <img src="img/gift.svg" alt="free gift">
                 <p><span class="violator-header">Three Ranger Principles Cruicial to Mission Success</span></p>
                 <p><a href="#">Download PDF</a></p>
                 </div>
@@ -90,15 +93,15 @@
             <div class="col-sm-1"></div>
             <div class="col-md-4">
          
-                <img src="../img/HappyPeople.jpg" alt="two people with signed copies of Keni Thomas's book">
+                <img src="img/audience.jpg" alt="audience">
             <p><span class="separator"></span></p>
             <h5>Memorable Delivery</h5>
             <p class="about-caption">Make your event impactful by captivating your audience from begining to end</p>
            
-                 <img src="../img/HappyPeople.jpg" alt="two people with signed copies of Keni Thomas's book">
+                 <img id="motivate" src="img/14876270-standard.jpg" alt="teenagers in a crowd raising their hands">
             <p><span class="separator"></span></p>
             <h5>Motivate Your Team</h5>
-            <p class="about-caption">Motivate your team to take care of each other and lead by example</p>
+            <p class="about-caption">Motivate your team to take care of each&nbsp;other and lead by example</p>
             </div> 
             <div class="clearfix"></div>
         
@@ -137,7 +140,7 @@
      <div class="item">
       <div class="carousel-caption">
 
-    <p>&ldquo;... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cupiditate fugiat culpa recusandae quasi sint numquam, dignissimos ad eius nihil!.&rdquo;</p>
+          <p>&ldquo;... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cupiditate fugiat culpa recusandae quasi sint numquam, dignissimos ad eius nihil!.&rdquo;</p>
     <p class="carousel-attribution">&ndash; Apple Cabin</p>
       </div>
     </div>
@@ -145,7 +148,7 @@
     <div class="item">
       <div class="carousel-caption">
  
-    <p>&ldquo;... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nam minima blanditiis, animi expedita explicabo voluptas dolorum doloribus odio mollitia!&rdquo;</p>
+          <p>&ldquo;... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nam minima blanditiis, animi expedita explicabo voluptas dolorum doloribus odio mollitia!&rdquo;</p>
     <p class="carousel-attribution">&ndash; Juli Shore Design</p>
       </div>
     </div>
@@ -170,14 +173,14 @@
         <div class="row boxed-row">
            <div id="client-logos">
               <p>From convention halls and classrooms, to the factory floor and the front lines, Keni Thomas is trusted by:</p>
-               <img src="../img/cocacola.svg" alt="Coca Cola logo"><p class="hidden">Coca Cola</p>
-               <img src="../img/cedarcreek.svg" alt="Cedar Creek logo"><p class="hidden">Cedar Creek</p>
-               <img src="../img/exxon.svg" alt="Exxon logo"><p class="hidden">Exxon</p>
-               <img src="../img/uso.svg" alt="USO logo"><p class="hidden">United Service Organizations</p>
-               <img src="../img/gmc.svg" alt="GMC logo"><p class="hidden">General Motorls Company</p>
-               <img src="../img/osha.svg" alt="OSHA logo"><p class="hidden">Occupational Safety and Health Administration</p>
-               <img src="../img/tcu.svg" alt="TCU logo"><p class="hidden">Texas Christian University</p>
-               <img src="../img/usairforce.svg" alt="US Airforce logo"><p class="hidden">United States Airforce</p>
+               <img src="img/cocacola.svg" alt="Coca Cola logo">
+               <img src="img/cedarcreek.svg" alt="Cedar Creek logo">
+               <img src="img/exxon.svg" alt="Exxon logo">
+               <img src="img/uso.svg" alt="USO logo">
+               <img src="img/gmc.svg" alt="GMC logo">
+               <img src="img/osha.svg" alt="OSHA logo">
+               <img src="img/tcu.svg" alt="TCU logo">
+               <img src="img/usairforce.svg" alt="US Airforce logo">
            </div>
             
         </div>
@@ -217,7 +220,7 @@ They will discover a new understanding of what it really means to be counted on 
            <p>And just think, no one has to get shot at during your event!  Its an honor and a privilege to tell the story of Task Force Ranger. I love what I get to do. So once you have a date, all you have to do is call Premiere Speakers Bureau. They’ll make it easy for you. Call or email them today and ask about booking Keni Thomas. But you should probably do it today, because we get booked out months in advance! You can reach them by here.</p> 
            
         <div class="violator">
-          <img src="../img/gift.svg" alt="free gift">
+          <img src="img/gift.svg" alt="free gift">
                 <p><span class="violator-header">Keni's Introduction</span></p>
             <p><a href="#"><span class="violator-download">Download PDF</span></a></p>
        </div>
@@ -234,7 +237,7 @@ They will discover a new understanding of what it really means to be counted on 
                </div>
                <h4>Discover why Keni's story will captivate your audience from begining to end</h4>
            </div>
-           <div id="container">
+           <div class="container">
                 <div class="row boxed-row">
                   
                   <div class="film-container">
@@ -268,7 +271,7 @@ They will discover a new understanding of what it really means to be counted on 
        <div class="container-fluid">
            <aside class="book">
                <div id="book_container">
-                   <img src="../img/GetItOn_Cover.jpg" cite="Get It On! What It Means to Lead the Way" alt="U.S. Army Rangers Veteran of Black Hawk Down Misson Keni Thomas" class="book">
+                   <img src="img/GetItOn_Cover.jpg" alt="Get It On! What It Means to Lead the Way. U.S. Army Rangers Veteran of Black Hawk Down Misson Keni Thomas" class="book">
                    <h6 class="book_title">Get It On! What it Means<br/> to Lead the Way</h6>
                    <p>Decorated U.S. military veteran-turned-country musician Keni Thomas gives a personal account of his heart-wrenching experiences in the chaotic 1993 Battle of Mogadishu to express a unique set of leadership lessons and inspired view of our greater purpose.</p>
                    <p><a href="#">Buy NOW</a><a class="link" href="#">Download FREE Audio Chaptper</a></p>
@@ -285,12 +288,12 @@ They will discover a new understanding of what it really means to be counted on 
            
        </div>
    </div>
-      <div id="container">
+      <div class="container">
                 <div class="row boxed-row">
                   
                   <div class="music-container">
                           <div class="music_thumb">
-                          <img src="../img/Give-it-Away-180.jpg" cite="Give It Away" alt="Album by Keni Thomas"/>
+                          <img src="img/Give-it-Away-180.jpg" alt="Give It Away Album by Keni Thomas"/>
                            <h5>2014<br/>Give It Away</h5>
                            <ul class="album">
                                <li class="album_link"><a href="#">Listen</a></li>
@@ -300,7 +303,7 @@ They will discover a new understanding of what it really means to be counted on 
                        </div>
 
                        <div class="music_thumb">
-                         <img src="../img/Gunslinger-180.jpg" cite="Gunslinger" alt="Album by Keni Thomas"/> 
+                         <img src="img/Gunslinger-180.jpg" alt="Gunslinger Album by Keni Thomas"/> 
                            <h5>2008<br/>Gunslinger</h5>
                            <ul class="album">
                                <li class="album_link"><a href="#">Listen</a></li>
@@ -310,7 +313,7 @@ They will discover a new understanding of what it really means to be counted on 
                        </div>
                        
                        <div class="music_thumb">
-                          <img src="../img/flags-of-our-fathers.jpg" cite="Flags of Our Father" alt="Album by Keni Thomas"/> 
+                          <img src="img/flags-of-our-fathers.jpg" alt="Flags of Our Father Album by Keni Thomas"/> 
                            <h5>2005<br/>Flags of Our Father</h5>
                            <ul class="album">
                                <li class="album_link"><a href="#">Listen</a></li>
@@ -364,7 +367,7 @@ They will discover a new understanding of what it really means to be counted on 
                       <div id="blog_preview_container">
                         <div class="blog_preview">
                             <div class="blog_thumb_container">
-                              <img src="../img/temp-keni-top.png" alt="">
+                              <img src="img/temp-keni-top.png" alt="">
                             </div>
                                 <h5 class="clamped clamped-2">Post Title</h5>
                                 <span class="ellipsis">&hellip;</span>
@@ -373,7 +376,7 @@ They will discover a new understanding of what it really means to be counted on 
                           
                           <div class="blog_preview">
                             <div class="blog_thumb_container">
-                              <img src="../img/speaker-page-pic.jpg" alt="">
+                              <img src="img/speaker-page-pic.jpg" alt="">
                             </div>
                                 <h5 class="clamped clamped-2">Post Title</h5>
                                 <span class="ellipsis">&hellip;</span>
@@ -382,7 +385,7 @@ They will discover a new understanding of what it really means to be counted on 
                           
                           <div class="blog_preview">
                             <div class="blog_thumb_container">
-                              <img src="../img/225992-300x195.jpg" alt="">
+                              <img src="img/225992-300x195.jpg" alt="">
                             </div>
                                 <h5 class="clamped clamped-2">Post Title</h5>
                                 <span class="ellipsis">&hellip;</span>
@@ -391,7 +394,7 @@ They will discover a new understanding of what it really means to be counted on 
                           
                           <div class="blog_preview">
                             <div class="blog_thumb_container">
-                              <img src="../img/woodie.bmp" alt="">
+                              <img src="img/woodie.bmp" alt="">
                             </div>
                                 <h5 class="clamped clamped-2">Post Title is exceptionally long so there should be an ellipsis here maybe I can get that to work soon.</h5>
                                 <span class="ellipsis">&hellip;</span>
@@ -401,7 +404,7 @@ They will discover a new understanding of what it really means to be counted on 
                           
                         <div class="blog_preview">
                             <div class="blog_thumb_container">
-                              <img src="../img/ wUSOinKandahar.jpg" alt="">
+                              <img src="img/wUSOinKandahar.jpg" alt="Keni Thomas USO show in Kandahar">
                             </div>
                                 <h5 class="clamped clamped-2">Post Title</h5>
                                 <span class="ellipsis">&hellip;</span>
@@ -410,7 +413,7 @@ They will discover a new understanding of what it really means to be counted on 
 
                          <div class="blog_preview">
                             <div class="blog_thumb_container">
-                              <a href="#"><img src="../img/19475.png" alt=""></a>
+                              <a href="#"><img src="img/19475.png" alt=""></a>
                             </div>
                                <div class="play_btn">
                                <a href=""><span class="glyphicon glyphicon-play"></span></a>
@@ -438,29 +441,8 @@ They will discover a new understanding of what it really means to be counted on 
                             <p>National Tax Sheltered Savings Association</p>
                             <p>Nashville, TN</p>
                             </div>
+                            <hr>
                         </li>
-                         <hr>
-                          <li class="calendar_item">
-                            <div class="calendar_date">
-                                  <p>May 24</p>
-                            </div>
-                            <div class="calendar_location">
-                            <p>Wave Church</p>
-                            <p>Virgina Beach, VA</p>
-                            </div>
-                        </li>
-                                                  <hr>
-
-                          <li class="calendar_item">
-                            <div class="calendar_date">
-                                  <p>May 24</p>
-                            </div>
-                            <div class="calendar_location">
-                            <p>Wave Church</p>
-                            <p>Virgina Beach, VA</p>
-                            </div>
-                        </li>
-                        <hr>
                          
                           <li class="calendar_item">
                             <div class="calendar_date">
@@ -470,8 +452,10 @@ They will discover a new understanding of what it really means to be counted on 
                             <p>Wave Church</p>
                             <p>Virgina Beach, VA</p>
                             </div>
+                            <hr>
                         </li>
-                         <hr>
+                                                  
+
                           <li class="calendar_item">
                             <div class="calendar_date">
                                   <p>May 24</p>
@@ -480,8 +464,32 @@ They will discover a new understanding of what it really means to be counted on 
                             <p>Wave Church</p>
                             <p>Virgina Beach, VA</p>
                             </div>
+                             <hr>
                         </li>
-                         <hr>
+                       
+                         
+                          <li class="calendar_item">
+                            <div class="calendar_date">
+                                  <p>May 24</p>
+                            </div>
+                            <div class="calendar_location">
+                            <p>Wave Church</p>
+                            <p>Virgina Beach, VA</p>
+                            </div>
+                            <hr>
+                        </li>
+                         
+                          <li class="calendar_item">
+                            <div class="calendar_date">
+                                  <p>May 24</p>
+                            </div>
+                            <div class="calendar_location">
+                            <p>Wave Church</p>
+                            <p>Virgina Beach, VA</p>
+                            </div>
+                        <hr>
+                        </li>
+                         
                           <li class="calendar_item">
                             <div class="calendar_date">
                                   <p>May 24</p>
@@ -512,7 +520,7 @@ They will discover a new understanding of what it really means to be counted on 
             <p class="footer-email">
                 
                 <!-- Begin Email Cloaking -->
-<script language='javascript' type='text/javascript'><!--
+<script type='text/javascript'><!--
 //
 // Anti-Spam Email Cloaking 3.0 by David Tulga
 // http://www.davidtulga.com/antispamemail.htm
@@ -535,11 +543,11 @@ document.write(out);
             
             <p class="footer-phone">(615) 261-4000</p>
             
-            <p class="subhead">Management</p>
+            <p class="subhead">Management<br/><span class="footer-separator"></span></p>
             <p class="footer-email">
                 
                 <!-- Begin Email Cloaking -->
-<script language='javascript' type='text/javascript'><!--
+<script type='text/javascript'><!--
 //
 // Anti-Spam Email Cloaking 3.0 by David Tulga
 // http://www.davidtulga.com/antispamemail.htm
@@ -570,10 +578,14 @@ document.write(out);
         <div class="col-md-4">
             <h6>Subscribe</h6>
             <p class="subhead">Get the Latest News<br/><span class="footer-separator"></span></p>
-            <form>
-                <p><input type="textfield" placeholder="Your Full Name"></p>
-                <p><input type="email" placeholder="E-mail address"></p>
-                <p><button>submit</button></p>
+            <form id="subscribe-form">
+                <p class="hide"><label for="fname-1">First Name*</label></p>
+                <p><input type="text" name="fname-1" id="fname-1" placeholder="First Name*"></p>
+                <p class="hide"><label for="lname-1">Last Name*</label></p>
+                <p><input type="text" name="lname-1" id="lname-1" placeholder="Last Name*"></p>
+                <p class="hide"><label for="email-1" >E-mail*</label></p>
+                <p><input type="email" name="email-1" id="email-1" placeholder="E-mail address*"></p>
+                <p><input type="submit"></p>
             </form>
             <div id="footer-download">
                 <p>Keni's Intro</p>
@@ -584,13 +596,19 @@ document.write(out);
             <h6>Get in Touch</h6>
             <p class="subhead">Other Questions?<br/><span class="footer-separator"></span></p>
             
-            <form>
-                <p><input type="textfield" placeholder="Your Full Name"></p>
-                <p><input type="email" placeholder="E-mail address"></p>
-                <p><input type="textfield" placeholder="Subject"></p>
-                <p><input type="area" placeholder="Your Full Name"></p>
+            <form id="contact-form">
+                <p class="hide"><label for="fname-2">First Name*</label></p>
+                <p><input type="text" name="fname-2" id="fname-2" placeholder="First Name*"></p>
+                <p class="hide"><label for="lname-2">Last Name*</label></p>
+                <p><input type="text" name="lname-2" id="lname-2" placeholder="Last Name*"></p>
+                <p class="hide"><label for="email-2" >E-mail*</label></p>
+                <p><input type="email" name="email-2" id="email-2" placeholder="E-mail address*"></p>
+                <p class="hide"><label for="subject-2">Subject*</label></p>
+                <p><input type="text" name="subject-2" id="subject-2" placeholder="Subject*"></p>
+                <p ><label for="message-2">Message*</label></p>
+                <p class="txt-area-p"><textarea rows="3" cols="33" name="message-2" id="message-2"  ></textarea></p>
 
-                <p><button>submit</button></p>
+                <p><input type="submit"></p>
             </form>
 
         </div>
@@ -612,5 +630,43 @@ document.write(out);
   interval: 6000
 })
       </script>
+      
+       <script type="text/javascript">
+      
+      $(document).ready(function() {
+     $("#toTop").hide();
+
+            // fade in & out
+       $(window).scroll(function () {
+                    if ($(this).scrollTop() > 400) {
+                        $('#toTop').fadeIn();
+                    } else {
+                        $('#toTop').fadeOut();
+                    }
+                });     
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+         $(this).click(function() {
+           $('html, body').animate({scrollTop: targetOffset}, 500);
+           return false;
+         });
+      }
+    }
+  });
+});
+      
+      </script>
+      
+      <script type="text/javascript">
+          $('body').scrollspy({ target: '.#navlist' })
+</script>
+      
+
   </body>
 </html>
