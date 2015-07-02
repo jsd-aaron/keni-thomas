@@ -1,3 +1,102 @@
+@font-face {
+    font-family: 'sanchezregular';
+    src: url('fonts/sanchez-webfont.eot');
+    src: url('fonts/sanchez-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sanchez-webfont.woff2') format('woff2'),
+         url('fonts/sanchez-webfont.woff') format('woff'),
+         url('fonts/sanchez-webfont.ttf') format('truetype'),
+         url('fonts/sanchez-webfont.svg#sanchezregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'sanchezitalic';
+    src: url('fonts/sanchez-italic-webfont.eot');
+    src: url('fonts/sanchez-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sanchez-italic-webfont.woff2') format('woff2'),
+         url('fonts/sanchez-italic-webfont.woff') format('woff'),
+         url('fonts/sanchez-italic-webfont.ttf') format('truetype'),
+         url('fonts/sanchez-italic-webfont.svg#sanchezitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('fonts/playfairdisplay-regular-webfont.eot');
+    src: url('fonts/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('fonts/playfairdisplay-regular-webfont.woff') format('woff'),
+         url('fonts/playfairdisplay-regular-webfont.ttf') format('truetype'),
+         url('fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'playfair_displayitalic';
+    src: url('fonts/playfairdisplay-italic-webfont.eot');
+    src: url('fonts/playfairdisplay-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
+         url('fonts/playfairdisplay-italic-webfont.woff') format('woff'),
+         url('fonts/playfairdisplay-italic-webfont.ttf') format('truetype'),
+         url('fonts/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'fjallaoneregular';
+    src: url('fonts/fjallaone-regular-webfont.eot');
+    src: url('fonts/fjallaone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/fjallaone-regular-webfont.woff2') format('woff2'),
+         url('fonts/fjallaone-regular-webfont.woff') format('woff'),
+         url('fonts/fjallaone-regular-webfont.ttf') format('truetype'),
+         url('fonts/fjallaone-regular-webfont.svg#fjallaoneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'franklin_gothic_fsbook';
+    src: url('fonts/FranklinGothic-Book-webfont.eot');
+    src: url('fonts/FranklinGothic-Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/FranklinGothic-Book-webfont.woff2') format('woff2'),
+         url('fonts/FranklinGothic-Book-webfont.woff') format('woff'),
+         url('fonts/FranklinGothic-Book-webfont.ttf') format('truetype'),
+         url('fonts/FranklinGothic-Book-webfont.svg#franklin_gothic_fsbook') format('svg');
+}
+
+
+@font-face {
+    font-family: 'league_spartanregular';
+    src: url('fonts/leaguespartan-bold-webfont.eot');
+    src: url('fonts/leaguespartan-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
+         url('fonts/leaguespartan-bold-webfont.woff') format('woff'),
+         url('fonts/leaguespartan-bold-webfont.ttf') format('truetype'),
+         url('fonts/leaguespartan-bold-webfont.svg#league_spartanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body{
     padding-top: 50px;
     font-size: 10px;
@@ -5,7 +104,27 @@ body{
     color: #6d6e71;
     background-color: #fff;
     position: relative;
+    font-family: 'franklin_gothic_fsbook';
 }
+
+video{
+    position: relative;
+    min-width: 100%;
+    z-index: 2;
+
+}
+
+.embed-responsive, .embed-responsive-16by9{
+  position: relative;
+    z-index: 2;
+}
+
+.embed-responsive-item{
+    position: relative;
+    z-index: 2;   
+}
+
+
 
 form p{
      margin-bottom: 30px; 
@@ -74,23 +193,29 @@ hr{
 }
 
 
-.fluid-row h3, .boxed-row h3{
+.fluid-row h2, .boxed-row h2{
+    font-family: 'fjallaoneregular', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    font-size: 4em;
+    letter-spacing: 2px;
+    font-size: 54px;
+    line-height: 65px;
     padding: 15% 10% 0 15%; 
     color: #fff;
     
 }
 
 #about h3{
-    font-family: serif;
+    font-family: 'playfair_displayregular', serif;
+    font-size: 40px;
+    line-height: 49px;
+    margin-left:36px;
 }
 
 h4{
     font-size: 40px;
     line-height: 53px;
-    font-family: serif;
+   font-family: 'playfair_displayregular', serif;
     margin-top: 0;
     margin-bottom: 52px;
     text-align: center;
@@ -107,8 +232,13 @@ h6{
 }
 
 /* NAVIGATION */
+
+.nav{
+     font-family: 'franklin_gothic_fsbook', sans-serif;  
+}
+
 .navbar-brand{
-    background-image: url(../img/kt_logo.svg);
+    background-image: url('img/kt_logo.svg');
     width: 170px;
     height: 135px;
     position: absolute;
@@ -118,8 +248,8 @@ h6{
 
 
 #top-video-loop{
-    min-height: 600px; 
-    background: url('../img/temp-keni-top.png') center top no-repeat;
+    max-height: 662px; 
+    background: url('img/temp-keni-top.png') center top no-repeat;
   -webkit-background-size: cover; 
   -moz-background-size: cover; 
   -o-background-size: cover; 
@@ -127,24 +257,42 @@ h6{
     text-align: center;
     color: #fff;
     border: 24px #fff solid;
+    overflow: hidden;
 }
 
-#top-video-loop p{
-    font-family: serif;
+#top-video-loop {
+    font-family: 'sanchezitalic', serif;
     font-size: 1.5em;
     font-weight: 100;
+    z-index: 6;
+    letter-spacing: 1px;
 }
 
 #top-video-loop button{
-    color: darkblue; 
+    color: #15374f; 
     padding: 10px 30px;
     margin: 10px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
+    z-index: 6;
+}
+
+#vid-content{
+    z-index: 6;
+    position: relative;
+    margin: -24px auto 0 auto;
+    height: 662px;
+    background-color: rgba(0,0,0,.25);
+}
+
+#vid-content button{
+     font-family: 'franklin_gothic_fsbook', sans-serif;
 }
 
 .quote-attribution{
+    font-family: 'sanchezregular', serif;
+    font-style: normal;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 100;
@@ -152,13 +300,33 @@ h6{
 
 #learn_bkg{
     min-height: 600px; 
-    background: url('../img/speech_live.jpg') center top no-repeat;
+    background: url('img/speech_live.jpg') center top no-repeat;
   -webkit-background-size: cover; 
   -moz-background-size: cover; 
   -o-background-size: cover; 
   background-size: cover;
     border: 24px #fff solid;
 
+}
+
+
+.bug-red{
+    width: 94px;
+    height: 94px; 
+    margin: 48px 48px 0 0;
+    float: right;
+    background: url('img/bug_red.svg');
+      
+}
+
+
+
+.bug-white{
+     width: 94px;
+    height: 94px; 
+    margin: 48px 48px 0 0;
+    float: right;
+    background: url('img/bug_white.svg');   
 }
 
 #learn h4{
@@ -167,6 +335,7 @@ h6{
 }
 
 #motivate {
+     margin-top: 133px;   
      margin-top: 133px;   
 }
 
@@ -180,9 +349,18 @@ h6{
     min-height: 662px;
 }
 
+.white_overlay .bug-red{
+    margin: 0 48px 0 0;
+}
+
+.white_overlay h3{
+    margin: 120px 0 40px 0; 
+    text-transform: capitalize;
+}
+
 #about_bkg{
     min-height: 662px;
-    background: url('../img/speaker-page-pic.jpg') center top no-repeat;
+    background: url('img/speaker-page-pic.jpg') center top no-repeat;
   -webkit-background-size: cover; 
   -moz-background-size: cover; 
   -o-background-size: cover; 
@@ -225,9 +403,10 @@ p span.separator::after {
 
 
 .boxed-row h5{
-    font-size: 2em; 
+    font-family: 'sanchezregular', serif;
+    font-size: 21px;
+    line-height: 27px;
     text-transform: uppercase;   
-    font-family: serif;
     margin-bottom: 0;
     letter-spacing: 1px;
 }
@@ -378,7 +557,7 @@ p span.separator::after {
 
 #speaker_bkg{
     min-height: 420px;
-    background: url('../img/6261040068_a861ff16d6_o.jpg') center top no-repeat;
+    background: url('img/6261040068_a861ff16d6_o.jpg') center top no-repeat;
   -webkit-background-size: cover; 
   -moz-background-size: cover; 
   -o-background-size: cover; 
@@ -427,16 +606,16 @@ h4.about_hdr{
 
 
 #speaker .film_thumb:first-child{
-    background-image: url('../img/kt_business.jpg');
+    background-image: url('img/kt_business.jpg');
 }
 
 #speaker .film_thumb:nth-child(2){
-    background-image: url('../img/kt_edu.jpg');
+    background-image: url('img/kt_edu.jpg');
     margin: 0 20px;
 }
 
 #speaker .film_thumb:nth-child(3){
-    background-image: url('../img/kt_faith.jpg');
+    background-image: url('img/kt_faith.jpg');
 }
 
 #speaker h5{
@@ -515,7 +694,7 @@ h6.book_title{
 
 #music_bkg{
     min-height: 662px;
-    background: url('../img/country_star.jpg') center top no-repeat;
+    background: url('img/country_star.jpg') center top no-repeat;
   -webkit-background-size: cover; 
   -moz-background-size: cover; 
   -o-background-size: cover; 
@@ -617,7 +796,7 @@ li.album_link a:active, li.album_link a:focus{
 }
 
 #music_video_container .col-md-3:nth-child(2){
-    background: url('../img/mgid-uma-video-mtv.jpg') center right no-repeat;
+    background: url('img/mgid-uma-video-mtv.jpg') center right no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
@@ -626,7 +805,7 @@ li.album_link a:active, li.album_link a:focus{
 
 
 #music_video_container .col-md-3:nth-child(3){
-    background: url('../img/0.jpg') center center no-repeat;
+    background: url('img/0.jpg') center center no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
@@ -635,7 +814,7 @@ li.album_link a:active, li.album_link a:focus{
 }
 
 #music_video_container .col-md-3:nth-child(4){
-    background: url('../img/shrevport.jpg') center center no-repeat;
+    background: url('img/shrevport.jpg') center center no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
@@ -644,7 +823,7 @@ li.album_link a:active, li.album_link a:focus{
 }
 
 #music_video_container .col-md-3:nth-child(5){
-    background: url('../img/mexico.png') center center no-repeat;
+    background: url('img/mexico.png') center center no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
@@ -653,7 +832,7 @@ li.album_link a:active, li.album_link a:focus{
 
 #news{
     min-height: 277px;
-    background: url('../img/news_hdr.jpg')  no-repeat;
+    background: url('img/news_hdr.jpg')  no-repeat;
   -webkit-background-size: cover; 
   -moz-background-size: cover; 
   -o-background-size: cover; 
@@ -794,6 +973,10 @@ li.album_link a:active, li.album_link a:focus{
     font-family: serif;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.calendar_list{
+     margin-top: -40px;   
 }
 
 #calendar_container ul{
