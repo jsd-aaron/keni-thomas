@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -23,22 +24,25 @@
   <header>
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
   <div class="container">
+   
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
 Menu +
       </button>
-        <a class="navbar-brand" href="#top"><span class="image-replace">Keni Thomas</span></a>
+        <a href="#top" class="navbar-brand"><span class="image-replace">Keni Thomas</span></a>
+        <div class="resp">RESPONSIVE MODE</div>
     </div>
-
+<div id="top"></div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     
      <div id="navlist">
-    <div id="top"></div>
      <ul class="nav navbar-nav navbar-right">
        
+        
+
         <li><a href="#learn">Learn More</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#speaker">Speaker</a></li>
@@ -81,11 +85,63 @@ Menu +
     </video>
         
    <div id="vid-content" >
-       <a href="#"><div class="bug-white"><p><span class="image-replace">Book Keni</span></p></div></a>
-        <h2>Motivational Speaker<br/>Extraordinary Storyteller</h2>
+       <a href="#" data-toggle="modal" data-target="#BookKeni"><div class="bug-white"><p><span class="image-replace">Book Keni</span></p></div></a>
+       
+        <!-- Modal -->   
+       
+         <div class="modal fade" id="BookKeni" tabindex="-1" role="dialog" aria-labelledby="BookKeni">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/x.svg"/></span></button>
+        <h4 class="modal-title" id="myModalLabel">Book Keni</h4>
+        <p><span class="separator"></span></p>
+        <p>To book Keni, or find out availablity and pricing for your event, please fill out the form below.</p>
+      </div>
+      <div class="modal-body">
+        <form id="book-form">
+                <p class="sr-only"><label for="fname-book">First Name*</label></p>
+                <p><input type="text" name="fname-book" id="fname-book" placeholder="First Name*"><label for="lname-book" class="sr-only">Last Name*</label><input type="text" name="lname-book" id="lname-book" placeholder="Last Name*"></p>
+                <p><input type="text" name="company-book" id="company-book" placeholder="Copany"><label for="dateloc-book" class="sr-only">Tentative Date &amp; Location</label><input type="text" name="dateloc-book" id="dateloc-book" placeholder="Tentative Date &amp; Location"></p>
+                <p><input type="email" name="email-book" id="email-book" placeholder="E-mail address*"></p>
+                <p><label for="subject-book" class="sr-only">Subject*</label><input type="text" name="subject-book" id="subject-book" placeholder="Subject*"></p>
+                <p ><label for="message-book" id="modal-label-book">Message*</label></p>
+                <p class="txt-area-p"><textarea rows="6" cols="59" name="message-book" id="message-book"  ></textarea></p>
+
+                <p><input type="submit"></p>
+                <p class="req">Required Field*</p>
+            </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+         
+           <h2>Motivational Speaker<br/>Extraordinary Storyteller</h2>
       <p>&ldquo;Never has a speaker grabbed me like Keni.<br/>His story has forever changed me moving forward&rdquo;</p>
         <p class="quote-attribution">&mdash; Fire Chief Manio Orangio</p>
-        <button formaction="#learnmore">Learn More</button><button>Watch Video</button>
+        <button formaction="#learnmore">Learn More</button>
+        
+        <button data-toggle="modal" data-target="#topVidModal">Watch Video</button>
+    
+        <!-- Modal -->   
+       
+         <div class="modal fade" id="topVidModal" tabindex="-1" role="dialog" aria-labelledby="topVidModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/x.svg"/></button>
+     </div>
+      <div class="modal-body">
+        
+        <div id="modal-video">
+          <iframe width="100%" height="800px" src="https://www.youtube.com/embed/4OgibCrmYJk" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
         </div>
 </div>
      
@@ -98,8 +154,8 @@ Menu +
    
     
     <div id="learn_bkg" class="row fluid-row" >
-       <a href="#"><div class="bug-white"><p><span class="image-replace">Book Keni</span></p></div></a>
-        <h2>redefine your understanding of what it means to lead the way</h2>
+       <a href="#" data-toggle="modal" data-target="#BookKeni"><div class="bug-white"><p><span class="image-replace">Book Keni</span></p></div></a>
+        <h2>Redefine your understanding of what it means to lead the way</h2>
     </div>
     
 </div>
@@ -108,8 +164,8 @@ Menu +
     
     <div class="row boxed-row">
         
-            <div class="col-md-7">
-                <h4>See yourslef as important, <br/>and you will begin to live up to it</h4>
+            <div id="learn_left">
+                <h4>See yourself as important, <br/>and you will begin to live up to it</h4>
                 <img src="img/HappyPeople.jpg" alt="two people with signed copies of Keni Thomas's book">
                 <p><span class="separator"></span></p>
                 <h5>Inspire Your Audience</h5>
@@ -121,13 +177,13 @@ Menu +
                 <p><a href="#">Download PDF</a></p>
                 </div>
             </div>
-            <div class="col-sm-1"></div>
-            <div class="col-md-4">
+            
+            <div id="learn_right">
          
                 <img src="img/audience.jpg" alt="audience">
             <p><span class="separator"></span></p>
             <h5>Memorable Delivery</h5>
-            <p class="about-caption">Make your event impactful by captivating your audience from begining to end</p>
+            <p class="about-caption">Make your event unforgettable as Keni guides you through an incredible story of teamwork and leadership</p>
            
                  <img id="motivate" src="img/14876270-standard.jpg" alt="teenagers in a crowd raising their hands">
             <p><span class="separator"></span></p>
@@ -153,7 +209,7 @@ Menu +
     <li data-target="#carousel-quotes" data-slide-to="2"></li>
   </ol>
 <p class="carousel-title">What People Are Saying</p>
- <p>–––––––––––––––––––––––</p>
+    <p><span class="carousel-separator"></span></p>
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
      
@@ -188,11 +244,11 @@ Menu +
 
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-quotes" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><img src="img/chevron_left.svg"></span>
     <span class="sr-only">Previous</span>
   </a>
   <a class="right carousel-control" href="#carousel-quotes" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><img src="img/chevron_right.svg"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
@@ -222,7 +278,7 @@ Menu +
        <div id="about_bkg" class="row fluid-row">
          
           <div class="white_overlay">
-             <a href="#"><div class="bug-red"><p><span class="image-replace">Book Keni</span></p></div></a>
+             <a href="#" data-toggle="modal" data-target="#BookKeni"><div class="bug-red"><p><span class="image-replace">Book Keni</span></p></div></a>
               <h3>What Makes Keni's Combat Story So Impactful</h3>
           <a href="#">
           <div id="about_video_thumb">
@@ -266,7 +322,7 @@ They will discover a new understanding of what it really means to be counted on 
        <div class="container-fluid">
            <div class="row fluid-row">
                <div id="speaker_bkg">
-                  <a href="#"><div class="bug-white"><p><span class="image-replace">Book Keni</span></p></div></a>
+                  <a href="#" data-toggle="modal" data-target="#BookKeni"><div class="bug-white"><p><span class="image-replace">Book Keni</span></p></div></a>
                    
                </div>
                <h4>Discover why Keni's story will captivate your audience from begining to end</h4>
@@ -318,7 +374,7 @@ They will discover a new understanding of what it really means to be counted on 
    
    <div id="music" class="container-fluid">
        <div id="music_bkg" class="row fluid-row">
-         <a href="#"><div class="bug-white"><p><span class="image-replace">Book Keni</span></p></div></a>
+         <a href="#" data-toggle="modal" data-target="#BookKeni"><div class="bug-white"><p><span class="image-replace">Book Keni</span></p></div></a>
           <h2>Music has a different way <br/>of reaching people</h2>
            
        </div>
@@ -391,15 +447,18 @@ They will discover a new understanding of what it really means to be counted on 
                        <div class="clearfix"></div>
                    </div>
                </div>
-               
+    
     <div class="container-fluid">
                <div id="news" class="row fluid-row">
-               <a href="#"><div class="bug-white"><p><span class="image-replace">Book Keni</span></p></div></a>
+               <a href="#" data-toggle="modal" data-target="#BookKeni"><div class="bug-white"><p><span class="image-replace">Book Keni</span></p></div></a>
                <h2>Journeys &amp; Musings</h2>
-        </div>
+          </div>
       </div>
+             
+            
+             <div id="newsbox" class="row boxed-row">
               <div id="news_calendar" class="container">
-                  <div class="row boxed-row">
+                  
                       <div id="blog_preview_container">
                         <div class="blog_preview">
                             <div class="blog_thumb_container">
@@ -460,11 +519,11 @@ They will discover a new understanding of what it really means to be counted on 
                                  <span class="fill"></span>
                                  
                         </div>
-                          
-                          <div class="clearfix">
+                        
+                          <div class="clearfix"></div>
                               <div class="more-link"><a href="#">More Posts</a></div>
                               
-                          </div>
+                      
                       </div>
                       <aside id="calendar_container">
                        <h4>Calendar</h4>
@@ -541,10 +600,11 @@ They will discover a new understanding of what it really means to be counted on 
                       </aside>
                       
                       <div class="clearfix"></div>
-                  </div>
-              </div>
-               
-   
+                </div>
+              </div>   
+             
+   <div class="fluid-container">
+       <div class="row fluid-row">
    
    <footer id="contact">
         <div class="col-md-4">
@@ -604,22 +664,22 @@ document.write(out);
                 
             </p>
             <ul class="footer-social">
-                <li>facebook</li>
-                <li>twitter</li>
-                <li>youtube</li>
-                <li>instagram</li>
-                <li>soundcloud</li>
+                <li class="f"><a href="https://www.facebook.com/kenithomas" target="_blank"><span class="image-replace">facebook</span></a></li>
+                <li class="t"><a href="https://twitter.com/kenithomas" target="_blank"><span class="image-replace">twitter</span></a></li>
+                <li class="y"><a href="https://www.youtube.com/user/kenithomas" target="_blank"><span class="image-replace">youtbue</span></a></li>
+                <li class="i"><a href="https://instagram.com/kenithomas/" target="_blank"><span class="image-replace">instagram</span></a></li>
+                <li class="s"><a href="https://soundcloud.com/kenithomas" target="_blank"><span class="image-replace">soundcloud</span></a></li>
             </ul>
         </div>
         <div class="col-md-4">
             <h6>Subscribe</h6>
             <p class="subhead">Get the Latest News<br/><span class="footer-separator"></span></p>
             <form id="subscribe-form">
-                <p class="hide"><label for="fname-1">First Name*</label></p>
+                <p class="sr-only"><label for="fname-1">First Name*</label></p>
                 <p><input type="text" name="fname-1" id="fname-1" placeholder="First Name*"></p>
-                <p class="hide"><label for="lname-1">Last Name*</label></p>
+                <p class="sr-only"><label for="lname-1">Last Name*</label></p>
                 <p><input type="text" name="lname-1" id="lname-1" placeholder="Last Name*"></p>
-                <p class="hide"><label for="email-1" >E-mail*</label></p>
+                <p class="sr-only"><label for="email-1" >E-mail*</label></p>
                 <p><input type="email" name="email-1" id="email-1" placeholder="E-mail address*"></p>
                 <p><input type="submit"></p>
             </form>
@@ -633,13 +693,13 @@ document.write(out);
             <p class="subhead">Other Questions?<br/><span class="footer-separator"></span></p>
             
             <form id="contact-form">
-                <p class="hide"><label for="fname-2">First Name*</label></p>
+                <p class="sr-only"><label for="fname-2">First Name*</label></p>
                 <p><input type="text" name="fname-2" id="fname-2" placeholder="First Name*"></p>
-                <p class="hide"><label for="lname-2">Last Name*</label></p>
+                <p class="sr-only"><label for="lname-2">Last Name*</label></p>
                 <p><input type="text" name="lname-2" id="lname-2" placeholder="Last Name*"></p>
-                <p class="hide"><label for="email-2" >E-mail*</label></p>
+                <p class="sr-only"><label for="email-2" >E-mail*</label></p>
                 <p><input type="email" name="email-2" id="email-2" placeholder="E-mail address*"></p>
-                <p class="hide"><label for="subject-2">Subject*</label></p>
+                <p class="sr-only"><label for="subject-2">Subject*</label></p>
                 <p><input type="text" name="subject-2" id="subject-2" placeholder="Subject*"></p>
                 <p ><label for="message-2">Message*</label></p>
                 <p class="txt-area-p"><textarea rows="3" cols="33" name="message-2" id="message-2"  ></textarea></p>
@@ -652,6 +712,8 @@ document.write(out);
         
 
    </footer>
+   </div>
+   </div>
    <div class="copyright">©Copyright 2015 Keni Thomas | Site Credit</div>
    
    
@@ -666,11 +728,11 @@ document.write(out);
   interval: 6000
 })
       </script>
-      
+      <!-- smooth scroll -->
        <script type="text/javascript">
       
       $(document).ready(function() {
-     $("#toTop").hide();
+     $("#toTop").sr-only();
 
             // fade in & out
        $(window).scroll(function () {
@@ -699,10 +761,51 @@ document.write(out);
       
       </script>
       
+      <!-- scrollspy -->
       <script type="text/javascript">
           $('body').scrollspy({ target: '.#navlist' })
 </script>
+     
+     <!-- modals -->
+
+      <script type="text/javascript">
       
+          $('#topVidModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+      
+      </script>  
+      
+          <script type="text/javascript">
+      
+          $('#BookKeni1').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+      
+      </script>    
+      
+      <script type="text/javascript">
+      //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+function autoPlayYouTubeModal(){
+  var trigger = $("body").find('[data-toggle="modal"]');
+  trigger.click(function() {
+    var theModal = $(this).data( "target" ),
+    videoSRC = $(this).attr( "data-theVideo" ), 
+    videoSRCauto = videoSRC+"?autoplay=1" ;
+    $(theModal+' iframe').attr('src', videoSRCauto);
+    $(theModal+' button.close').click(function () {
+        $(theModal+' iframe').attr('src', videoSRC);
+    });   
+  });
+}
+      </script>
+      
+      
+      <script type="text/javascript">
+          $(document).ready(function(){
+  autoPlayYouTubeModal();
+});
+      </script>
 
   </body>
 </html>

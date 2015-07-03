@@ -1,4 +1,14 @@
 @font-face {
+    font-family: 'franklin_gothic_fsbook';
+    src: url('fonts/FranklinGothic-Book-webfont.eot');
+    src: url('fonts/FranklinGothic-Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/FranklinGothic-Book-webfont.woff2') format('woff2'),
+         url('fonts/FranklinGothic-Book-webfont.woff') format('woff'),
+         url('fonts/FranklinGothic-Book-webfont.ttf') format('truetype'),
+         url('fonts/FranklinGothic-Book-webfont.svg#franklin_gothic_fsbook') format('svg');
+}
+
+@font-face {
     font-family: 'sanchezregular';
     src: url('fonts/sanchez-webfont.eot');
     src: url('fonts/sanchez-webfont.eot?#iefix') format('embedded-opentype'),
@@ -73,16 +83,6 @@
 
 }
 
-@font-face {
-    font-family: 'franklin_gothic_fsbook';
-    src: url('fonts/FranklinGothic-Book-webfont.eot');
-    src: url('fonts/FranklinGothic-Book-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/FranklinGothic-Book-webfont.woff2') format('woff2'),
-         url('fonts/FranklinGothic-Book-webfont.woff') format('woff'),
-         url('fonts/FranklinGothic-Book-webfont.ttf') format('truetype'),
-         url('fonts/FranklinGothic-Book-webfont.svg#franklin_gothic_fsbook') format('svg');
-}
-
 
 @font-face {
     font-family: 'league_spartanregular';
@@ -110,19 +110,27 @@ body{
 video{
     position: relative;
     min-width: 100%;
-    z-index: 2;
+    
+
 
 }
 
 .embed-responsive, .embed-responsive-16by9{
   position: relative;
-    z-index: 2;
+
+}
+
+.embed-responsive, .embed-responsive-4by3{
+  position: relative;
+
+
 }
 
 .embed-responsive-item{
     position: relative;
-    z-index: 2;   
+  
 }
+
 
 
 
@@ -132,10 +140,12 @@ form p{
 }
 
 label{
+    font-family: 'franklin_gothic_fsbook', sans-serif;
     font-weight: 100;
     color: #2b6280;
     letter-spacing: 1px;
     margin-bottom: 0;
+    text-align: left;
 }
 
 input{
@@ -150,33 +160,43 @@ input{
 }
 
 input[type=submit] {
+    font-family: 'franklin_gothic_fsbook', sans-serif;
     font-size: 17px;
     line-height: 20px;
     width: auto;
     float: right;
     letter-spacing: 1px;
     padding: 0 0 5px 0;
+    margin-top: 1em;
 }
 
 
 ::-webkit-input-placeholder {
-   color: #2b6280;
+   font-family: 'franklin_gothic_fsbook', sans-serif;
+    color: #2b6280;
     letter-spacing: 1px;
+    text-align: left;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #2b6280; 
+    font-family: 'franklin_gothic_fsbook', sans-serif;
+    color: #2b6280; 
     letter-spacing: 1px;
+    text-align: left;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #2b6280; 
+   font-family: 'franklin_gothic_fsbook', sans-serif;
+    color: #2b6280; 
     letter-spacing: 1px;
+    text-align: left;
 }
 
 :-ms-input-placeholder {  
-   color: #2b6280;  
+   font-family: 'franklin_gothic_fsbook', sans-serif;
+    color: #2b6280;  
     letter-spacing: 1px;
+    text-align: left;
 }
 
 textarea{
@@ -185,7 +205,8 @@ textarea{
 }
 
 .txt-area-p{
-     margin: 0;   
+     margin: 0;  
+    
 }
 
 hr{
@@ -193,17 +214,25 @@ hr{
 }
 
 
-.fluid-row h2, .boxed-row h2{
+
+.fluid-row h2, .boxed-row h2 {
     font-family: 'fjallaoneregular', sans-serif;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
     font-size: 54px;
     line-height: 65px;
-    padding: 15% 10% 0 15%; 
+    padding: 15% 0 0 0; 
     color: #fff;
     
 }
+
+#learn_bkg h2{
+    
+    max-width: 65%;
+    margin: 0 auto;
+}
+
 
 #about h3{
     font-family: 'playfair_displayregular', serif;
@@ -213,12 +242,16 @@ hr{
 }
 
 h4{
-    font-size: 40px;
-    line-height: 53px;
-   font-family: 'playfair_displayregular', serif;
+    font-family: 'playfair_displayregular', serif;
+    font-size: 39px;
+    line-height: 49px;
     margin-top: 0;
     margin-bottom: 52px;
     text-align: center;
+}
+
+#learn #learn_left h4{
+     font-family: 'playfair_displayregular', serif;   
 }
 
 h6{
@@ -248,8 +281,12 @@ h6{
 
 
 #top-video-loop{
+    font-family: 'sanchezitalic', serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    letter-spacing: 1px;
     max-height: 662px; 
-    background: url('img/temp-keni-top.png') center top no-repeat;
+    background: url('img/temp-kenny-top.png') center top no-repeat;
   -webkit-background-size: cover; 
   -moz-background-size: cover; 
   -o-background-size: cover; 
@@ -260,13 +297,6 @@ h6{
     overflow: hidden;
 }
 
-#top-video-loop {
-    font-family: 'sanchezitalic', serif;
-    font-size: 1.5em;
-    font-weight: 100;
-    z-index: 6;
-    letter-spacing: 1px;
-}
 
 #top-video-loop button{
     color: #15374f; 
@@ -275,11 +305,9 @@ h6{
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
-    z-index: 6;
 }
 
 #vid-content{
-    z-index: 6;
     position: relative;
     margin: -24px auto 0 auto;
     height: 662px;
@@ -309,6 +337,16 @@ h6{
 
 }
 
+#learn_left{
+     width: 580px;  
+    float: left;
+}
+
+#learn_right{
+     width: 376px;
+    float: right;
+}
+
 
 .bug-red{
     width: 94px;
@@ -335,8 +373,8 @@ h6{
 }
 
 #motivate {
-     margin-top: 133px;   
-     margin-top: 133px;   
+     margin-top: 60px;   
+  
 }
 
 
@@ -372,7 +410,7 @@ h6{
 #about_video_thumb{
     width: 440px;
     height: 250px;
-    background: url('img/87_2_screenshot.png');
+    background: url('img/87_2_screenshot.jpg');
     margin-left: -46px;
     padding-top: 23%;
 }
@@ -383,7 +421,7 @@ h6{
 }
 
 .boxed-row{
-    padding: 106px 150px;  
+    padding: 106px 135px;  
 
 }
 
@@ -396,6 +434,7 @@ h6{
 
 
 p span.separator::after { 
+    font-family: 'franklin_gothic_fsbook', sans-serif;
     content: "–––––––––––";
     letter-spacing: -2px;
     line-height: 2em;
@@ -503,19 +542,25 @@ p span.separator::after {
 }
 
 .carousel-title{
-    font-family: sans-serif;
+    font-family: 'franklin_gothic_fsbook', sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     width: 100%;
     padding-top: 3em;
-    letter-spacing: 3px;
-    font-weight: 200;
+    letter-spacing: 4px;
+    font-weight: 400;
     line-height: 20px;
 }
 
 
+span.carousel-separator::after{
+    font-family: 'franklin_gothic_fsbook', sans-serif;
+    content:"---------------------------------------------";
+}
+
 .carousel-caption{
     color:#fff;
+    font-family: 'sanchezitalic', serif;
     font-size: 25px;
     line-height: 37px;
     font-weight: 100;
@@ -523,9 +568,23 @@ p span.separator::after {
 }
 
 .carousel-attribution{
-    text-transform: uppercase;
-    font-family: serif;  
+    font-family: 'sanchezregular', serif;
+    text-transform: uppercase;  
     font-size: 17px;
+}
+
+.arrow-left{
+    width: 25px;
+    height: 50px;
+    background-image: url('img/chevron_left.svg'); 
+    margin: -10px 0 0 76px; 
+}
+
+.arrow-right{
+    width: 25px;
+    height: 50px; 
+    background: url('img/chevron_right.svg'); 
+    margin: -10px 0 76px 0; 
 }
 
 .item, .item .active {
@@ -823,7 +882,7 @@ li.album_link a:active, li.album_link a:focus{
 }
 
 #music_video_container .col-md-3:nth-child(5){
-    background: url('img/mexico.png') center center no-repeat;
+    background: url('img/mexico.jpg') center center no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
@@ -831,7 +890,7 @@ li.album_link a:active, li.album_link a:focus{
 }
 
 #news{
-    min-height: 277px;
+    min-height: 300px;
     background: url('img/news_hdr.jpg')  no-repeat;
   -webkit-background-size: cover; 
   -moz-background-size: cover; 
@@ -841,27 +900,29 @@ li.album_link a:active, li.album_link a:focus{
     margin-top: 100px;
 }
 
-#news_calendar .boxed-row{
-     padding: 0px ;   
+#newsbox.boxed-row{
+    width: 100%; 
+    padding: 0px;   
+    border: 0;
 }
 
-#news h3{
-     padding-top: 75px;   
+#news h2{
+     padding-top: 65px;  
 }
 
 #news_calendar{
-    height: 600px;
+    height: 100%;
     padding: 0;
-    border: none;
-    padding: 0;    
+    border: 0;
 }
 
 
 #blog_preview_container{
-    width: 72%;
-    height: 525px;
+    max-width: 74%;
+    height: auto;
     float: left;
     margin: 0;
+    border: 0;
 }
 
 .blog_preview{
@@ -878,6 +939,7 @@ li.album_link a:active, li.album_link a:focus{
     width: 295px;
     height: 200px;
     overflow: hidden;
+    margin: 0;
 }
 
 .blog_preview img{
@@ -960,7 +1022,7 @@ li.album_link a:active, li.album_link a:focus{
 /* end ellipsis */
 
 #calendar_container{
-    width: 27%;
+    width: 26%;
     font-family: serif;
     font-weight: 200;
     padding: 17px;
@@ -1075,6 +1137,7 @@ footer{
 }
 
 .footer-separator::after{
+    font-family: 'franklin_gothic_fsbook', sans-serif;
     content:"----------";
     letter-spacing: -2px;
 }
@@ -1185,3 +1248,374 @@ footer a:active, footera:focus{
 .blog_preview .glyphicon-play{
      margin-left: 5px;   
 }
+
+
+/* social */ 
+
+ul.footer-social{
+    list-style-type: none;
+    text-indent: none;
+    padding: 0;
+}
+
+ul.footer-social li, ul.footer-social li a{
+    width: 38px;
+    height: 22px;
+    text-indent: none;
+    padding: 0;
+    display: inline;
+    float: left;
+}
+
+
+    /* facebook */
+
+ul.footer-social li.f a:link, ul.footer-social li.f a:visited{
+    background: url('img/social_sprites.svg') 3px 0 no-repeat;
+}
+
+ul.footer-social li.f a:hover{
+    background: url('img/social_sprites.svg') 3px -22px no-repeat;    
+}
+
+ul.footer-social li.f a:active, ul.footer-social li.f a:focus{
+    background: url('img/social_sprites.svg') 3px 0 no-repeat;
+}
+
+    /* twitter */
+
+ul.footer-social li.t a:link, ul.footer-social li.t a:visited{
+    background: url('img/social_sprites.svg') -33px 0 no-repeat;
+}
+
+ul.footer-social li.t a:hover{
+    background: url('img/social_sprites.svg') -33px -22px no-repeat;    
+}
+
+ul.footer-social li.t a:active, ul.footer-social li.t a:focus{
+    background: url('img/social_sprites.svg') -33px 0 no-repeat;
+}
+
+    /* youtube */
+
+ul.footer-social li.y a:link, ul.footer-social li.y a:visited{
+    background: url('img/social_sprites.svg') -72px 0 no-repeat;
+}
+
+ul.footer-social li.y a:hover{
+    background: url('img/social_sprites.svg') -72px -22px no-repeat;    
+}
+
+ul.footer-social li.y a:active, ul.footer-social li.y a:focus{
+    background: url('img/social_sprites.svg') -72px 0 no-repeat;
+}
+
+    /* instagram */
+
+ul.footer-social li.i a:link, ul.footer-social li.i a:visited{
+    background: url('img/social_sprites.svg') -111px 0 no-repeat;
+}
+
+ul.footer-social li.i a:hover{
+    background: url('img/social_sprites.svg') -111px -22px no-repeat;    
+}
+
+ul.footer-social li.i a:active, ul.footer-social li.i a:focus{
+    background: url('img/social_sprites.svg') -111px 0 no-repeat;
+}
+
+    /* soundcloud */
+
+ul.footer-social li.s a:link, ul.footer-social li.s a:visited{
+    background: url('img/social_sprites.svg') -154px 0 no-repeat;
+}
+
+ul.footer-social li.s a:hover{
+    background: url('img/social_sprites.svg') -154px -22px no-repeat;    
+}
+
+ul.footer-social li.s a:active, ul.footer-social li.s a:focus{
+    background: url('img/social_sprites.svg') -154px 0 no-repeat;
+}
+
+
+
+/* modals */
+
+
+.close {
+  float: right;
+  font-family: sans-serif;
+    font-size: 50px;
+  font-weight: 100;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 0 0 #fff;
+  filter: none;
+  opacity: 1;
+}
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  filter: none;
+  opacity: .9;
+}
+button.close {
+  -webkit-appearance: initial;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+  border: 0;
+    color: #fff;
+}
+
+
+#BookKeni .modal-dialog{
+        width: 680px;
+}
+
+.modal-content{
+
+  position: relative;
+  border: 0;
+  outline: 0;
+  padding: 50px;
+    
+}
+
+#BookKeni .modal-content{
+     background-color: #15374f;   
+}
+
+#BookKeni .close{
+     margin: -70px;   
+}
+
+.modal-header {
+  min-height: 0;
+
+  border-bottom: 0;
+   text-align: left;
+}
+
+.modal-header p{
+    font-family: 'playfair_displayregular', serif; 
+    text-align: left;
+}
+
+.modal-header h4{
+     text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.modal-header span.separator::after{
+    content: "----------------";
+    font-family: sans-serif;
+    letter-spacing: -2px;   
+}
+
+.req{
+    font-family: 'franklin_gothic_fsbook', sans-serif;
+    font-size: 12px;
+    width: 150px;
+    float: right;
+    margin-top: -15px;
+    text-align: right;
+    letter-spacing: 2px;
+}
+
+.modal input[type=submit]{    
+    float: left;
+    font-size: 12px;
+     letter-spacing: 2px;
+    
+}
+
+.modal-body{
+     margin-top: -40px;   
+}
+
+.modal input{
+     margin-bottom: 30px;   
+}
+
+.modal input[type=text]{
+    width: 45%;
+    float: left;
+}
+
+#lname-book, #dateloc-book{
+     margin-left: 45px;   
+}
+
+#subject-book{
+     width: 100%;
+    margin-top: -30px;
+}
+
+#modal-label-book{
+     width: 100%;
+}
+
+#message-book{
+     margin-top: -27px;   
+}
+
+/* video modal */
+
+
+#topVidModal .modal-dialog .modal-content{
+     background-color: none;    
+}
+
+#topVidModal .modal-header .close{
+    color: #fff;
+    height: 100px;
+    z-index: 1041;
+    font-size: 50px;
+    position: absolute;
+    right: 0;
+    margin-right: 100px;
+}
+
+
+
+#topVidModal #modal-video{
+    width: 100%;
+    min-height: 800px;
+
+}
+
+    
+.resp{
+     display: none;   
+}
+
+
+@media (max-width: 767px) {
+    
+
+  .resp{
+     display: initial; 
+      position: fixed;
+      top: 5px;
+      left: 5px;
+      color: aquamarine;
+      font-weight: bolder;
+}  
+    
+    .navbar-brand{
+         left: -1px;   
+    }
+    
+    #top-video-loop{
+    font-family: 'sanchezitalic', serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    letter-spacing: 1px;
+    height: 516px; 
+    background: url('img/temp-kenny-top.png') center top no-repeat;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+    text-align: center;
+    color: #fff;
+    border: 10px #fff solid;
+    overflow: visible;
+}
+    
+
+
+    
+
+#learn_bkg{
+    min-height: 600px; 
+    background: url('img/speech_live.jpg') center top no-repeat;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+    border: 10px #fff solid;
+
+}
+
+    
+    
+    
+    #learn_left{
+         width: 100%;   
+    }
+    
+    #learn_right{
+        width: 100%;
+    }
+
+
+    
+    .boxed-row{
+        padding: 106px 30px;  
+
+}
+    
+#about_bkg{
+    min-height: 662px;
+    background: url('img/speaker-page-pic.jpg') center top no-repeat;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+    border: 10px #fff solid;
+
+}
+
+#speaker_bkg{
+    min-height: 420px;
+    background: url('img/6261040068_a861ff16d6_o.jpg') center top no-repeat;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+    border: 10px #fff solid;
+}
+
+
+#music_bkg{
+    min-height: 662px;
+    background: url('img/country_star.jpg') center top no-repeat;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+    border: 10px #fff solid;
+}
+
+#news{
+    min-height: 300px;
+    background: url('img/news_hdr.jpg')  no-repeat;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+    border: 10px #fff solid;
+    margin-top: 100px;
+}
+
+footer{
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    background-color: #15374f;
+    margin-top: 50px;
+    min-height: 800px;
+    color: #fff;
+    border: 10px solid #fff;
+    padding: 100px 174px;
+    font-weight: 100;
+}
+
+    
+} /* end >768px styles */

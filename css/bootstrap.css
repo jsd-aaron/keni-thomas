@@ -528,12 +528,16 @@ th {
 .glyphicon-eject:before {
   content: "\e078";
 }
+/*
 .glyphicon-chevron-left:before {
   content: "\e079";
 }
-.glyphicon-chevron-right:before {
-  content: "\e080";
+*/
+/*
+.glyphicon-chevron-right {
+   
 }
+*/
 .glyphicon-plus-sign:before {
   content: "\e081";
 }
@@ -1583,8 +1587,6 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -5934,6 +5936,7 @@ button.close {
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
+/*
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform .3s ease-out;
        -o-transition:      -o-transform .3s ease-out;
@@ -5949,6 +5952,19 @@ button.close {
        -o-transform: translate(0, 0);
           transform: translate(0, 0);
 }
+*/
+
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+     -moz-transition: -moz-transform 0.3s ease-out;
+       -o-transition: -o-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
+}
+
+.modal.in .modal-dialog {
+
+}
+
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
@@ -5963,13 +5979,11 @@ button.close {
   background-color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
-  border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, .2);
-  border-radius: 6px;
-  outline: 0;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    border: none;
+    box-shadow: 0;
+
 }
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -5977,7 +5991,7 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #000;
+  background-color: #fff;
 }
 .modal-backdrop.fade {
   filter: alpha(opacity=0);
@@ -6027,12 +6041,11 @@ button.close {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
+    width: 100%;
     margin: 30px auto;
   }
   .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+
   }
   .modal-sm {
     width: 300px;
@@ -6373,34 +6386,23 @@ button.close {
 }
 .carousel-control {
   position: absolute;
-  top: 0;
+  top: 45%;
   bottom: 0;
   left: 0;
-  width: 15%;
+  width: 5%;
   font-size: 20px;
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  filter: alpha(opacity=50);
-  opacity: .5;
+
 }
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
-  background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-  background-repeat: repeat-x;
+
+
 }
 .carousel-control.right {
   right: 0;
   left: auto;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
-  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-  background-repeat: repeat-x;
+
 }
 .carousel-control:hover,
 .carousel-control:focus {
@@ -6412,8 +6414,8 @@ button.close {
 }
 .carousel-control .icon-prev,
 .carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .glyphicon-chevron-right {
+.carousel-control .glyphicon glyphicon-menu-left,
+.carousel-control .glyphicon glyphicon-menu-left {
   position: absolute;
   top: 50%;
   z-index: 5;
@@ -6429,6 +6431,9 @@ button.close {
 .carousel-control .glyphicon-chevron-right {
   right: 50%;
   margin-right: -10px;
+    width: 24px;
+    height: 50px;
+    background: url('img/chevron_right.svg');
 }
 .carousel-control .icon-prev,
 .carousel-control .icon-next {
@@ -6492,18 +6497,25 @@ button.close {
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
   .carousel-control .icon-next {
-    width: 30px;
-    height: 30px;
     margin-top: -15px;
     font-size: 30px;
+      height: 50px;
+    width: 24px;
+    background-image: url('img/chevron_right.svg');
   }
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .icon-prev {
     margin-left: -15px;
+      height: 50px;
+    width: 24px;
+    background-image: url('img/chevron_left.svg');
+
   }
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-next {
     margin-right: -15px;
+    background-image: url('img/chevron_right.svg');
+      
   }
   .carousel-caption {
     right: 20%;
