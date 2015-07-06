@@ -267,7 +267,26 @@ h6{
 /* NAVIGATION */
 
 .nav{
-     font-family: 'franklin_gothic_fsbook', sans-serif;  
+     font-family: 'franklin_gothic_fsbook', sans-serif;
+    
+}
+
+.navbar-toggle{
+     text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.navbar-toggle{
+  
+}
+
+.navbar-toggle-minus-hide{
+    display: none;
+}
+
+.navbar-toggle-minus{
+    display: initial;
 }
 
 .navbar-brand{
@@ -1495,7 +1514,7 @@ button.close {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
     
 
   .resp{
@@ -1618,4 +1637,4 @@ footer{
 }
 
     
-} /* end >768px styles */
+} /* end <768px styles */
