@@ -305,6 +305,10 @@ h6{
     left: 14px;
 }
 
+.navbar-nav > li.active > a:link, .navbar-nav > li.active > a:visited{
+     color: #15374f   ;
+}
+
 
 #top-video-loop{
     font-family: 'sanchezitalic', serif;
@@ -324,18 +328,21 @@ h6{
 }
 
 
-#top-video-loop button{
+span.top_btn {
+    width: 160px;
+    margin: 0 15px 0 15px;
     color: #15374f; 
+    background-color: #fff;
     padding: 10px 30px;
-    margin: 10px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-family: 'franklin_gothic_fsbook';
+    font-weight: normal;
     letter-spacing: 2px;
 }
 
 #vid-content{
     position: relative;
-    margin: -24px auto 0 auto;
+    margin: -54px auto 0 auto;
     height: 662px;
     background-color: rgba(0,0,0,.25);
 }
@@ -350,6 +357,7 @@ h6{
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 100;
+    margin-bottom: 30px;
 }
 
 #learn_bkg{
@@ -1049,6 +1057,7 @@ li.album_link a:active, li.album_link a:focus{
     bottom: 0;
     position: absolute;
     right: 0;
+    padding-bottom: 12px;
 }
 
 .fill {
@@ -1387,9 +1396,19 @@ ul.footer-social li.s a:active, ul.footer-social li.s a:focus{
 .down_arrow{
      width: 45px;
     height: 55px;
-    margin: 140px auto 0 auto;
+    margin: 0 auto 0 auto;
     display: block;
     position: relative;
+}
+
+#learnmore .down_arrow{
+    margin-top: 135px;
+}
+
+#about .down_arrow{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: -90%;
 }
 
 
@@ -1971,7 +1990,7 @@ button.close {
     
     .bug-white, .bug-red{
     
-        margin: 10px 10px 40px 300px;
+        margin: 40px 10px 40px 300px;
     }
     
     #vid-content p{
@@ -1995,9 +2014,21 @@ button.close {
     
     
     .quote-attribution{
-         margin-bottom: 0;   
+         margin-bottom: 30px;   
+        padding-bottom: 10px;
     }
 
+    a span.top_btn{ 
+        padding-top: 10px;
+        
+    }
+    
+    p span.top_btn{
+         width: 200px;
+        height: 35px;
+        display: block;
+        margin: 15px auto;
+    }
     
 
     #learn_bkg{

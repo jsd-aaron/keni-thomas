@@ -17,10 +17,16 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+           <script type="text/javascript">
+      var a = alert(spy!);
+          
+      $('body').scrollspy({ target: '#navlist' });
+           
+      
+      </script>
   </head>
   
-  <body>
+  <body data-spy="scroll" data-target="#navlist">
   <header>
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
   <div class="container">
@@ -32,7 +38,7 @@
 <span class="navbar-toggle-minus-hide">Menu -</span> <span class="navbar-toggle-plus">Menu +</span> 
       </button>
         <a href="#top" class="navbar-brand"><span class="image-replace">Keni Thomas</span></a>
-        <div class="resp">RESPONSIVE MODE</div>
+
     </div>
 <div id="top"></div>
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -117,12 +123,10 @@
        
          
          
-           <h2>Motivational<br class="lg-hide"/>Speaker<br/>Extraordinary<br class="lg-hide"/>Storyteller</h2>
+           <h2>Motivational<br class="lg-hide"/> Speaker<br/>Extraordinary<br class="lg-hide"/> Storyteller</h2>
       <p>&ldquo;Never has a speaker grabbed me like Keni. His story has forever changed me moving forward&rdquo;</p>
         <p class="quote-attribution">&mdash; Fire Chief Manio Orangio</p>
-        <button formaction="#learnmore">Learn More</button>
-        
-        <button data-toggle="modal" data-target="#topVidModal">Watch Video</button>
+       <p><a href="#learnmore"><span class="top_btn">Learn More</span></a><a href="#learnmore"><span class="top_btn" data-toggle="modal" data-target="#topVidModal">Watch Video</span></a></p>
     
         <!-- Modal -->   
        
@@ -294,6 +298,7 @@
           <div id="about_video_thumb">
               <div class="play_btn"><span data-toggle="modal" data-target="#topVidModal" class="glyphicon glyphicon-play"></span></div>
           </div>
+          <div class="down_arrow"><a href="#about_hdr"><img src="img/arrow_down_large.svg" alt="down arrow" /></a></div>
           </div>
           <div class="clearfix"></div>
        </div>
@@ -301,7 +306,7 @@
     <div class="container">
        <div class="row boxed-row">
 
-           <h4 class="about_hdr">Motivate your team to train as they fight, <br class="sm-hide"/>fight as they train and create leaders at every level.</h4>
+           <h4 class="about_hdr" id="about_hdr">Motivate your team to train as they fight, <br class="sm-hide"/>fight as they train and create leaders at every level.</h4>
            <div class="col-md-4">
            <p>The historic battle of Blackhawk Down is an incredible story that admittedly, has been told many times and in many ways. I understand that  if you only wanted to entertain your audience you could watch the movie and read the book. Likewise, if you are simply looking for another leadership keynote speaker, i know you have an overwhelming number of options to wade through.</p> 
 <p>
@@ -736,43 +741,34 @@ document.write(out);
   interval: 6000
 })
       </script>
-      <!-- smooth scroll -->
+     
+<!-- smooth scroll -->
        <script type="text/javascript">
-      
-      $(document).ready(function() {
-     $("#toTop").sr-only();
+       
+$("a[href^='#']").on('click', function(e) {
 
-            // fade in & out
-       $(window).scroll(function () {
-                    if ($(this).scrollTop() > 400) {
-                        $('#toTop').fadeIn();
-                    } else {
-                        $('#toTop').fadeOut();
-                    }
-                });     
-  $('a[href*=#]').each(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname
-    && this.hash.replace(/#/,'') ) {
-      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-       if ($target) {
-         var targetOffset = $target.offset().top;
-         $(this).click(function() {
-           $('html, body').animate({scrollTop: targetOffset}, 500);
-           return false;
-         });
-      }
-    }
-  });
+   // prevent default anchor click behavior
+   e.preventDefault();
+
+   // store hash
+   var hash = this.hash;
+
+   // animate
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 500, function(){
+
+       // when done, add hash to url
+       // (default click behaviour)
+       window.location.hash = hash;
+     });
+
 });
+                  
+         
+             </script>
       
-      </script>
       
-      <!-- scrollspy -->
-      <script type="text/javascript">
-          $('body').scrollspy({ target: '.#navlist' })
-</script>
      
      <!-- modals -->
 
@@ -808,6 +804,7 @@ function autoPlayYouTubeModal(){
   });
 }
       </script>
+      
       
       
       <script type="text/javascript">
