@@ -206,6 +206,8 @@ textarea{
     background-color: #15374f;
      border: 1px solid #fff;
     width: 100%;
+    border-radius: 0;
+    -webkit-appearance: none;
 }
 
 .txt-area-p{
