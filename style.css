@@ -168,6 +168,7 @@ input[type=submit] {
     letter-spacing: 1px;
     padding: 0 0 5px 0;
     margin-top: 1em;
+    color: #fff;
 }
 
 
@@ -202,11 +203,16 @@ input[type=submit] {
 textarea{
     background-color: #15374f;
      border: 1px solid #fff;
+    width: 100%;
 }
 
 .txt-area-p{
      margin: 0;  
-    
+}
+
+.modal-body #book-form p label#modal-label-book {
+     font-size: 17px;
+    letter-spacing: 1px;
 }
 
 hr{
@@ -231,6 +237,7 @@ hr{
     
     max-width: 65%;
     margin: 0 auto;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
 }
 
 
@@ -250,7 +257,7 @@ h4{
     text-align: center;
 }
 
-#learn #learn_left h4{
+#learn #learn_left h4, #learn h5{
      font-family: 'playfair_displayregular', serif;   
 }
 
@@ -864,6 +871,11 @@ li.album_link a:active, li.album_link a:focus{
     font-family: serif;
     font-size: 40px;
     line-height: 53px;
+    
+}
+
+#music_video_container p{
+     text-shadow: 0px 5px 10px rgba(0, 0, 0, .25);
 }
 
 #music_video_container .col-md-3 {
@@ -931,7 +943,8 @@ li.album_link a:active, li.album_link a:focus{
 }
 
 #news h2{
-     padding-top: 65px;  
+     padding-top: 65px; 
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
 }
 
 #news_calendar{
@@ -975,6 +988,7 @@ li.album_link a:active, li.album_link a:focus{
 
 .blog_preview h5{
     width: 295px;
+    font-family: 'playfair_displayregular', serif;
     font-size: 19px;
 
 }
@@ -990,6 +1004,7 @@ li.album_link a:active, li.album_link a:focus{
     text-align: right;
     bottom: 0;
     margin-right: 24px;
+    clear: both;
 }
 
 #blog_preview_container .more-link a:link{
@@ -1234,6 +1249,10 @@ footer a:active, footera:focus{
     border-bottom: 2px solid #fff;   
 }
 
+footer textarea{
+     margin-top: -27px;   
+}
+
 /* PLAY BUTTON */
 
 .play_btn{
@@ -1362,6 +1381,16 @@ ul.footer-social li.s a:active, ul.footer-social li.s a:focus{
     background: url('img/social_sprites.svg') -154px 0 no-repeat;
 }
 
+/* down arrow */
+
+
+.down_arrow{
+     width: 45px;
+    height: 55px;
+    margin: 140px auto 0 auto;
+    display: block;
+    position: relative;
+}
 
 
 /* modals */
@@ -1401,7 +1430,6 @@ button.close {
 }
 
 .modal-content{
-
   position: relative;
   border: 0;
   outline: 0;
@@ -1409,19 +1437,25 @@ button.close {
     
 }
 
+.req{
+     color: #fff;   
+}
+
 #BookKeni .modal-content{
      background-color: #15374f;   
 }
 
 #BookKeni .close{
-     margin: -70px;   
+     margin: -65px -50px;   
 }
 
 .modal-header {
-  min-height: 0;
-
-  border-bottom: 0;
-   text-align: left;
+    min-height: 0;
+    color: #fff;
+    border-bottom: 0;
+    text-align: left;
+    font-size: 12px;
+    line-height: 14px;
 }
 
 .modal-header p{
@@ -1533,22 +1567,23 @@ button.close {
 
 
 @media (max-width: 1374px){
+    
     #learn_left{
-     width: 100%;   
+         width: 100%;   
     }
-    
+
     #learn_right{
-     width: 100%;   
+         width: 100%;   
     }
-    
+
     #speaker h4{
-     padding: 0 30%;   
+         padding: 0 30%;   
     }
       
     
       #speaker .film_thumb{ 
         height: 300px;
-          margin: 60px auto;   
+        margin: 60px auto;   
         float: none;
     }
     
@@ -1617,30 +1652,62 @@ button.close {
         
     }
     
+    #music_video_container p{
+        margin-top: 30%;
+    }
+    
      .blog_preview h5{
         width: 100%;
-        font-size: 19px;
+         font-size: 17px;
+         line-height: 22px;
         margin: 10px auto;
     }
     
     #blog_preview_container{
-        width: 54%        
+        width: 100% 
+
     }
     
    
     #calendar_container{
-        width: 46%;
-    }
-    
-    footer{
-      padding: 100px 20%;   
+        width: 100%;
+        min-height: 650px;
+        clear: both;
+        border: 10px solid #fff;
+        border-top: 40px solid #fff;
         
     }
     
+    #blog_preview_container .more-link{
+        text-align: center;
+        margin: 0 0 0 0;
+        font-size: 12px;
+        line-height: 21px;
+        
+    }
+    
+    footer{
+        width: 100%;
+        min-height: 1700px;
+    }
+
+
+    footer h6{
+        font-size: 33px;
+        line-height: 25px;
+        clear: both;
+    }
+
+
     footer .col-md-4{
      width: 100%;
-    margin: 30px auto;
+    margin: 130px 0 0 0 ;
     }
+    
+    footer .col-md-4:first-child{
+         margin-top: -50px;   
+    }
+    
     
     #subscribe{
      margin: 150px 0;   
@@ -1649,6 +1716,13 @@ button.close {
     #footer-download{
      display: none;   
     }
+    
+    #learn_left .violator{
+         min-height: 138px;
+        margin-bottom: 30px;
+    }
+    
+   
     
 }
 
@@ -1673,7 +1747,7 @@ button.close {
     .blog_preview{
         width: 100%;
         margin: 0 auto;
-    }
+    } 
     
     
 }
@@ -1698,8 +1772,8 @@ button.close {
     }
     
     .blog_thumb_container{
-        width: 100%;
-        height: 212px;
+        width: 270px;
+         height: 211px;
         margin: 0 auto;
     }
     
@@ -1714,6 +1788,7 @@ button.close {
         margin: 30px auto;
         float: none;
     }
+
     
 }
 
@@ -1723,7 +1798,7 @@ button.close {
 
     
     
-  .resp{
+      .resp{
      display: initial; 
       position: fixed;
       top: 5px;
@@ -1736,7 +1811,10 @@ button.close {
          left: -1px;   
     }
     
-
+    
+    .navbar-toggle{
+         margin-right: 16px;   
+    }
 
     .fluid-row h2, .boxed-row h2{
          font-size: 33px;
@@ -1779,6 +1857,95 @@ button.close {
     .sm-hide{
          display: none;   
     }
+    
+    #BookKeni{
+         min-height: 300px;
+        background-color: #15374f;
+    }
+    
+    #BookKeni .modal-dialog{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .modal-dialog .close img{
+        margin: 20px 70px 0 0;
+    }
+    
+    .modal-dialog h4{
+        font-size: 23px;
+        line-height: 25px;
+    }
+    
+    .modal-header{
+        margin: 30px 0 0 0;
+        text-align: left;
+        padding: 0;
+        color: #fff;
+    }
+    
+    .modal-content p{
+        width: 100%; 
+        padding: 0; 
+        margin: 0;
+    }
+    
+    .modal-body{
+        padding: 0;
+        margin: 30px 0 0 0;
+        text-align: left;
+    }
+    
+    
+    .modal input[type=text]{
+    width: 100%;
+    float: none;
+}
+
+    #lname-book, #dateloc-book{
+         margin-left: 0;   
+    }
+    
+    #book-form{
+        text-align: left;
+    }
+    
+    .modal-header p{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    
+    .modal textarea{
+        width: 100%;   
+    }
+    
+    .modal #modal-label-book, txt-area-p,{ 
+        color: #306d80;
+    }
+    
+    input[type=submit]{
+         color: #fff;   
+    }
+    
+    .modal .req{
+        margin-top: 15px;
+        width: 200px;   
+        color: #fff;
+    }
+    
+    
+    #subject-book{
+         margin-bottom: 60px;   
+    }
+    
+    
+    .modal-body #book-form p label#modal-label-book {
+     font-size: 17px;
+    letter-spacing: 1px;
+        margin-top: -30px;
+        padding-top: 60px;
+}
+    
 
     #top-video-loop{
          top: 70px;
@@ -1836,10 +2003,10 @@ button.close {
     #learn_bkg{
     min-height: 600px; 
     background: url('img/speech_live.jpg') center top no-repeat;
-  -webkit-background-size: cover; 
-  -moz-background-size: cover; 
-  -o-background-size: cover; 
-  background-size: cover;
+      -webkit-background-size: cover; 
+      -moz-background-size: cover; 
+      -o-background-size: cover; 
+    background-size: cover;
     border: 10px #fff solid;
 
     }
@@ -1869,7 +2036,7 @@ button.close {
      width: 100px;
     height: 100px;
     margin: -6px 30px 0 -6px;
-}
+    }
     
     .violator a{
          font-size: 12px;   
@@ -1945,29 +2112,34 @@ button.close {
     .boxed-row{
         padding: 30px 30px;  
 
-}
+    }
     
     
    #learn_left p span.separator{  
        font-family: sans-serif;
-       letter-spacing: -3px;
+       letter-spacing: -20px;
+    }
+    
+    #learn_left, #learn_right{
+         border: 10px solid #fff;   
     }
     
     #learn .violator{
-         clear: both;   
+         clear: both; 
+        margin-bottom: 30px;
     }
     
-#about_bkg{
-    width: 100%;
-    max-height: 200px;
-    background: url('img/speaker-page-pic.jpg') center top no-repeat;
-  -webkit-background-size: contain; 
-  -moz-background-size: contain; 
-  -o-background-size: contain; 
-  background-size: contain;
-            border: 10px solid #fff;
+    #about_bkg{
+        width: 100%;
+        max-height: 200px;
+        background: url('img/speaker-page-pic.jpg') center top no-repeat;
+      -webkit-background-size: contain; 
+      -moz-background-size: contain; 
+      -o-background-size: contain; 
+      background-size: contain;
+                border: 10px solid #fff;
 
-}
+    }
     
     #about .bug-red{
         margin-top: -265px;
@@ -1997,8 +2169,8 @@ button.close {
     }
     
     #about .violator{
-     padding-left: 50px;
-    margin: 30px 0;
+        padding-left: 50px;
+        margin: 30px 0;
     }
     
     #about .violator p {
@@ -2014,12 +2186,21 @@ button.close {
     #speaker_bkg{
         min-height: 420px;
         background: url('img/6261040068_a861ff16d6_o.jpg') center top no-repeat;
-      -webkit-background-size: cover; 
-      -moz-background-size: cover; 
-      -o-background-size: cover; 
-      background-size: cover;
+         -webkit-background-size: cover; 
+          -moz-background-size: cover; 
+          -o-background-size: cover; 
+          background-size: cover;
         border: 10px #fff solid;
 }
+    
+    #speaker .play_btn{
+         margin-top: 55px;   
+    }
+    
+    #speaker .film_thumb{
+        height: 225px;
+
+    }
     
     #book_container{
          height: 200px;   
@@ -2039,26 +2220,26 @@ button.close {
     }
 
 
-#music_bkg{
-    min-height: 662px;
-    background: url('img/country_star.jpg') center top no-repeat;
-  -webkit-background-size: cover; 
-  -moz-background-size: cover; 
-  -o-background-size: cover; 
-  background-size: cover;
-    border: 10px #fff solid;
-}
+    #music_bkg{
+        min-height: 662px;
+        background: url('img/country_star.jpg') center top no-repeat;
+      -webkit-background-size: cover; 
+      -moz-background-size: cover; 
+      -o-background-size: cover; 
+      background-size: cover;
+        border: 10px #fff solid;
+    }
 
-#news{
-    min-height: 300px;
-    background: url('img/news_hdr.jpg')  no-repeat;
-  -webkit-background-size: cover; 
-  -moz-background-size: cover; 
-  -o-background-size: cover; 
-  background-size: cover;
-    border: 10px #fff solid;
-    margin-top: 100px;
-}
+    #news{
+        min-height: 300px;
+        background: url('img/news_hdr.jpg')  no-repeat;
+      -webkit-background-size: cover; 
+      -moz-background-size: cover; 
+      -o-background-size: cover; 
+      background-size: cover;
+        border: 10px #fff solid;
+        margin-top: 100px;
+    }
     
     #newsbox{
         width: 100%;
@@ -2078,12 +2259,15 @@ button.close {
         float: none;
     }
     
+
+    
      #blog_preview_container{
-        width: 100%;
+        width: 270px;
+         height: 211px;
         margin: 0 auto;
         clear: both;
         float: none;
-         padding: 0;
+        padding: 0;
     }
     
     .blog_thumb_container{
@@ -2091,6 +2275,8 @@ button.close {
         height: 212px;
         margin: 0 auto;
     }
+    
+ 
     
     .blog_preview{
         width: 100%;
@@ -2103,21 +2289,9 @@ button.close {
         float: none;
     }
     
-
-footer{
-    width: 100%;
-    font-family: sans-serif;
-    font-size: 17px;
-    line-height: 23px;
-    background-color: #15374f;
-    margin-top: 50px;
-    color: #fff;
-    border: 10px solid #fff;
-    font-weight: 100;
-}
-
-    
-    
+    footer{
+     padding: 100px 30px;   
+    }
     
     
 } /* end <768px styles */
