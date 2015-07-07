@@ -157,6 +157,8 @@ input{
     font-size: 17px;
     line-height: 27px;
     width: 100%;
+    border-radius: 0;
+    -webkit-appearance: none;
 }
 
 input[type=submit] {
