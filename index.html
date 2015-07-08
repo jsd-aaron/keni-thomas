@@ -40,7 +40,7 @@
         <a href="#top" class="navbar-brand"><span class="image-replace">Keni Thomas</span></a>
 
     </div>
-<div id="top"></div>
+
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     
@@ -49,20 +49,21 @@
        
         
 
-        <li><a href="#learnmore">Learn More</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#speaker">Speaker</a></li>
-        <li><a href="#music">Music</a></li>
-        <li><a href="#news_calendar">News</a></li>
-        <li><a href="#news_calendar">Calendar</a></li>
-        <li><a href="#store">Store</a></li>
-        <li><a href="#contact">Contact</a></li>       
+        <li><a href="#learnmore" class="mob-off">Learn More</a></li>
+        <li><a href="#about" class="mob-off">About</a></li>
+        <li><a href="#speaker" class="mob-off">Speaker</a></li>
+        <li><a href="#music" class="mob-off">Music</a></li>
+        <li><a href="#news_calendar" class="mob-off">News</a></li>
+        <li><a href="#news_calendar" class="mob-off">Calendar</a></li>
+        <li><a href="#store" class="mob-off">Store</a></li>
+        <li><a href="#contact" class="mob-off">Contact</a></li>       
         
       </ul>
       </div>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<div id="top"></div>
 <div class="container-fluid">
     
     <div class="modal fade" id="BookKeni" tabindex="-1" role="dialog" aria-labelledby="BookKeni">
@@ -139,7 +140,7 @@
       <div class="modal-body">
         
         <div id="modal-video">
-          <iframe width="800" height="800" src="https://www.youtube.com/embed/4OgibCrmYJk" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/4OgibCrmYJk" width="800" height="800"  allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -814,15 +815,31 @@ function autoPlayYouTubeModal(){
       </script>
       
       
-      <script type="text/javascript">
+<!--       <script type="text/javascript">
       $(function() {
-	$("#togglenav").click(function() {
-		$(".navbar-toggle-minus-hide").toggleClass("navbar-toggle-minus");
+          $("#togglenav").click(function() {
+              $(".navbar-toggle-minus-hide").toggleClass("navbar-toggle-minus");
+              
+          });
+      });
+      
+      </script> -->
+      
+      <script type="text/javascript">
+        
+              $(function() {
+	$(".mob-off").click(function() {
+		$(".in").toggleClass("off");
+
+
 		
 	});
 });
 
+      
       </script>
+      
+
 
   </body>
 </html>
