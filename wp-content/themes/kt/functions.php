@@ -17,7 +17,26 @@
 
 if (!isset($content_width))
 {
-    $content_width = 900;
+    $content_width = 1380;
+}
+
+if( ! function_exists('fix_no_editor_on_posts_page'))
+{
+	/**
+	 * Add the wp-editor back into WordPress after it was removed in 4.2.2.
+	 *
+	 * @param $post
+	 * @return void
+	 */
+	function fix_no_editor_on_posts_page($post)
+	{
+		if($post->ID != get_option('page_for_posts'))
+			return;
+
+		remove_action('edit_form_after_title', '_wp_posts_page_notice');
+		add_post_type_support('page', 'editor');
+	}
+	add_action('edit_form_after_title', 'fix_no_editor_on_posts_page', 0);
 }
 
 if (function_exists('add_theme_support'))
@@ -30,7 +49,7 @@ if (function_exists('add_theme_support'))
     add_image_size('large', 700, '', true); // Large Thumbnail
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
-    add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('news_thumb', 295, 200, true); //News Thumbnail
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
@@ -345,7 +364,8 @@ add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditi
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
+add_action('init', 'create_post_type_news'); // Add our HTML5 Blank Custom Post Type
+add_action('init', 'create_post_type_calendar'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -395,26 +415,62 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 	Custom Post Types
 \*------------------------------------*/
 
-// Create 1 Custom Post type for a Demo, called HTML5-Blank
-function create_post_type_html5()
+
+function create_post_type_news()
 {
-    register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
-    register_taxonomy_for_object_type('post_tag', 'html5-blank');
-    register_post_type('html5-blank', // Register Custom Post Type
+    register_taxonomy_for_object_type('category', 'news'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'news');
+    register_post_type('news', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
-            'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
-            'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
-            'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-            'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-            'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-            'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
+            'name' => __('News Posts', 'newsposts'), // Rename these to suit
+            'singular_name' => __('News Post', 'newspost'),
+            'add_new' => __('Add New', 'newspost'),
+            'add_new_item' => __('Add New News Post', 'newspost'),
+            'edit' => __('Edit', 'news'),
+            'edit_item' => __('Edit News Post', 'newspost'),
+            'new_item' => __('New News Post', 'newspost'),
+            'view' => __('View News Post', 'newspost'),
+            'view_item' => __('View News Post', 'newspost'),
+            'search_items' => __('Search News Post', 'newspost'),
+            'not_found' => __('No News Post', 'newspost'),
+            'not_found_in_trash' => __('No News Posts found in Trash', 'newspost')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+    
+}
+function create_post_type_calendar()
+{
+    register_taxonomy_for_object_type('category', 'calendar'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'calendar');
+    register_post_type('calendar', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Calendar Events', 'calendar-event'), // Rename these to suit
+            'singular_name' => __('Calendar Event', 'calendar-event'),
+            'add_new' => __('Add New', 'calendar-event'),
+            'add_new_item' => __('Add New Calendar Event', 'calendar-event'),
+            'edit' => __('Edit', 'Calendar Event', 'calendar-event'),
+            'new_item' => __('New Calendar Event', 'calendar-event'),
+            'view' => __('View Calendar Event', 'calendar-event'),
+            'view_item' => __('View Calendar Event', 'calendar-event'),
+            'search_items' => __('Search Calendar Event', 'calendar-event'),
+            'not_found' => __('No Calendar Event', 'calendar-event'),
+            'not_found_in_trash' => __('No Calendar Event found in Trash', 'calendar-event')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages

@@ -241,7 +241,7 @@ hr{
 
 
 
-.fluid-row h2, .boxed-row h2 {
+h1, .fluid-row h2, .boxed-row h2 {
     font-family: 'fjallaoneregular', sans-serif;
     text-transform: uppercase;
     text-align: center;
@@ -252,6 +252,11 @@ hr{
     color: #fff;
     
 }
+
+#news h1{
+     padding-top: 6%;   
+}
+
 
 #learn_bkg h2{
     
@@ -964,8 +969,16 @@ li.album_link a:active, li.album_link a:focus{
     margin-top: 100px;
 }
 
+#news_page_wrapper{
+     width: 100%;
+    padding: 0 60px;
+}
+
+
+
 #newsbox.boxed-row{
     width: 100%; 
+
     padding: 0px;   
     border: 0;
 }
@@ -976,15 +989,20 @@ li.album_link a:active, li.album_link a:focus{
 }
 
 #news_calendar{
-    height: 100%;
     padding: 0;
     border: 0;
+    position: relative;
+}
+
+#news_page_wrapper #news_calendar{
+     width: 1380px;   
+    margin: 0 auto;
+    position: relative;
 }
 
 
 #blog_preview_container{
-    max-width: 74%;
-    height: auto;
+    max-width: 950px;
     float: left;
     margin: 0;
     border: 0;
@@ -1090,13 +1108,14 @@ li.album_link a:active, li.album_link a:focus{
 /* end ellipsis */
 
 #calendar_container{
-    width: 26%;
+    width: 24%;
     font-family: serif;
     font-weight: 200;
     padding: 17px;
     height: 600px;
     float: left;
     background-color: #eaeaea;  
+    position: relative;
 }
 
 #calendar_container h4{
@@ -1150,7 +1169,8 @@ li.album_link a:active, li.album_link a:focus{
 }
 
 #calendar_container hr{
-    clear: both;   
+    clear: both;  
+    position: relative;
 }
 
 
@@ -1194,6 +1214,7 @@ footer{
     border: 24px solid #fff;
     padding: 100px 174px;
     font-weight: 100;
+    clear: both;
 }
 
 .subhead{

@@ -1,4 +1,7 @@
- <footer id="contact">
+ <div class="fluid-container">
+       <div class="row fluid-row">
+       
+       <footer id="contact">
         <div class="col-md-4">
             <h6>Booking</h6>
             <p class="subhead">Booking Inquiries
@@ -111,8 +114,7 @@ document.write(out);
    
    
    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="wp-content/themes/kt/js/bootstrap.min.js"></script>
   <script type="text/javascript">
