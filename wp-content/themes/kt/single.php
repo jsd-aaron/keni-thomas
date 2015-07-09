@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php /* Template Name: News Post */ include 'news_header.php'; ?>
 
 	<main role="main">
 	<!-- section -->
@@ -8,44 +8,60 @@
 
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+	<!-- post title -->
+        <div id="single_post_wrapper">
+        <div class="row boxed-row">
+            <a href="#" data-toggle="modal" data-target="#BookKeni"><div class="bug-red"></div></a>
+			<h1><?php the_title(); ?></h1>
 			<!-- post thumbnail -->
 			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-				</a>
+                    <div id="news_hdr_container"><?php add_image_size( 'news-hdr'); ?>
+	                <?php the_post_thumbnail('news-hdr'); ?>
+                    </a>
+            </div>
+				
 			<?php endif; ?>
 			<!-- /post thumbnail -->
 
-			<!-- post title -->
-			<h1>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-			</h1>
-			<!-- /post title -->
+		
 
-			<!-- post details -->
-			<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-			<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-			<!-- /post details -->
+
+    <div id="post-body">
 
 			<?php the_content(); // Dynamic Content ?>
+<div class="single-tags">
+                              <p><span>Tags:</span> <?php echo strip_tags(get_the_tag_list('',', ','')); ?></p>
+</div>
 
-			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+<div id="single-social">
+    
+               <ul class="footer-social">
+                <li class="f"><a href="https://www.facebook.com/kenithomas" target="_blank"><span class="image-replace">facebook</span></a></li>
+                <li class="t"><a href="https://twitter.com/kenithomas" target="_blank"><span class="image-replace">twitter</span></a></li>
+    </ul>
+    <p><span>Share</span></p>
+    <div class="clearfix"></div>
+</div>
+			<div class="prev-next-links">
+<div class="prev-post"><?php previous_post('%', 'Previous Post', 'no'); ?></div>
+    <div class="next-post"><?php next_post('%', 'Next Post', 'no'); ?></div>
+    <div class="clearfix"></div>
+    <div class="editlink"><?php edit_post_link(); // Always handy to have Edit Post Links available ?></div>
+   </div>
+    </div>
 
-			<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
+			
 
-			<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
-
-			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
-
-			<?php comments_template(); ?>
 
 		</article>
 		<!-- /article -->
 
 	<?php endwhile; ?>
 
+</div>
+
+</div>
 	<?php else: ?>
 
 		<!-- article -->
@@ -62,6 +78,6 @@
 	<!-- /section -->
 	</main>
 
-<?php get_sidebar(); ?>
 
-<?php get_footer(); ?>
+
+<?php include 'single-footer.php'; ?>

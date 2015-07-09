@@ -50,6 +50,7 @@ if (function_exists('add_theme_support'))
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
     add_image_size('news_thumb', 295, 200, true); //News Thumbnail
+    add_image_size('news_hdr', 890, 500, true); //News Post Header
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
@@ -453,6 +454,7 @@ function create_post_type_news()
     ));
     
 }
+
 function create_post_type_calendar()
 {
     register_taxonomy_for_object_type('category', 'calendar'); // Register Taxonomies for Category
@@ -504,5 +506,4 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
-
 ?>
