@@ -6,7 +6,7 @@
    
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="wp-content/themes/kt/js/bootstrap.min.js"></script>
+    <script src="/wp-content/themes/kt/js/bootstrap.min.js"></script>
   <script type="text/javascript">
       $('.carousel').carousel({
   interval: 6000

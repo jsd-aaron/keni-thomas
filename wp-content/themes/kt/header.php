@@ -10,9 +10,9 @@
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
-        <link href="wp-content/themes/kt/css/bootstrap.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" >
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>" type="text/css" media="screen" />
+        <link href="/wp-content/themes/kt/css/bootstrap.css" rel="stylesheet">
+    <link href="/wp-content/themes/kt/style.css" rel="stylesheet" >
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/wp-content/themes/kt/style.css'); ?>" type="text/css" media="screen" />
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

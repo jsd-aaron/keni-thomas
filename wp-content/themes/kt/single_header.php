@@ -29,7 +29,7 @@
   
   <body data-spy="scroll" data-target="#navlist" >
   <header>
-      <nav id="news-nav" class="navbar navbar-default navbar-fixed-top" role="navigation" >
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
   <div class="container">
    
     <div class="navbar-header">
@@ -61,12 +61,8 @@
       </ul>
       </div>
       
-      
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-<a href="#" data-toggle="modal" data-target="#BookKeni"><div class="bug-white"></div></a>
-<h1><?php the_title(); ?></h1>
-</nav>
 
 
 <div id="top"></div>

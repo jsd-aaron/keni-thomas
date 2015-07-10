@@ -1,4 +1,4 @@
-<?php /* Template Name: News Post */ include 'news_header.php'; ?>
+<?php /* Template Name: News Post */ include 'single_header.php'; ?>
 
 	<main role="main">
 	<!-- section -->

@@ -4,12 +4,7 @@
 
 			
 			
-			<div class="container-fluid">
-               <div id="news" class="row fluid-row">
-      
-               <h1><?php the_title(); ?></h1>
-          </div>
-      </div>
+			
       <div id="news_page_wrapper">
 <div id="news_calendar" class="container" > 
           <div id="newsbox" class="row boxed-row" >

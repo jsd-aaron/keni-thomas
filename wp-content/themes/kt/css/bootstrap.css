@@ -1608,14 +1608,16 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
 @media (min-width: 1380px) {
-  .container {
+  
+    .container {
     max-width: 1380px;
   }
+
 }
 .container-fluid {
   padding-right: 15px;
