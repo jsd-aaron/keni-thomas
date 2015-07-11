@@ -10,6 +10,7 @@
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<!-- post title -->
         <div id="single_post_wrapper">
+        
         <div class="row boxed-row">
             <a href="#" data-toggle="modal" data-target="#BookKeni"><div class="bug-red"></div></a>
 			<h1><?php the_title(); ?></h1>
@@ -79,5 +80,6 @@
 	</main>
 
 
-
+<?php include 'modal-bookkeni.php'; ?>
 <?php include 'single-footer.php'; ?>
+

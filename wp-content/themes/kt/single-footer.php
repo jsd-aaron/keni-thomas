@@ -58,6 +58,14 @@ $("a[href^='#']").on('click', function(e) {
   $('#myInput').focus()
 })
       
+      </script> 
+      
+         <script type="text/javascript">
+      
+          $('#LyricsModal-give1').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+      
       </script>    
       
       <script type="text/javascript">

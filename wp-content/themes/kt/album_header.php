@@ -14,6 +14,7 @@
     <link href="/wp-content/themes/kt/style.css" rel="stylesheet" >
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/wp-content/themes/kt/style.css'); ?>" type="text/css" media="screen" />
 
+
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,7 +28,7 @@
   
   <body data-spy="scroll" data-target="#navlist" >
   <header>
-      <nav id="news-nav" class="navbar navbar-default navbar-fixed-top" role="navigation" >
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
   <div class="container">
    
     <div class="navbar-header">
@@ -59,20 +60,13 @@
       </ul>
       </div>
       
-      
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-<a href="#" data-toggle="modal" data-target="#BookKeni"><div class="bug-white"></div></a>
-<h1><?php the_title(); ?></h1>
-</nav>
 
 
 <div id="top"></div>
  
 <div class="container-fluid">
-    
-    
-    
 
   
         

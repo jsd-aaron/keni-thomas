@@ -294,7 +294,7 @@ They will discover a new understanding of what it really means to be counted on 
                           <img src="wp-content/themes/kt/img/Give-it-Away-180.jpg" alt="Give It Away Album by Keni Thomas"/>
                            <h5>2014<br/>Give It Away</h5>
                            <ul class="album">
-                               <li class="album_link"><a href="#">Listen</a></li>
+                               <li class="album_link"><a href="/give-it-away-2014/">Listen</a></li>
                                <li class="album_link"><a href="#">Store</a></li>
                                <li class="album_link"><a href="#">iTunes</a></li>
                            </ul>
@@ -417,7 +417,7 @@ while ( $loop->have_posts() ) : $loop->the_post(); ?>
                       <div class="clearfix"></div>
                 </div>
               </div>   
-             
+             <?php include 'modal-bookkeni.php'; ?>
    
 
 

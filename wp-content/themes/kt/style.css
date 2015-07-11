@@ -148,9 +148,6 @@ video{
   
 }
 
-
-
-
 form p{
      margin-bottom: 30px; 
     
@@ -256,6 +253,15 @@ h1, .fluid-row h2, .boxed-row h2 {
 
 #news h1{
      padding-top: 6%;   
+}
+
+#album_wrapper h1{
+    font-family: 'playfair_displayregular';
+    font-size: 40px;
+    line-height: 39px;
+    padding: 0;
+    margin: 30px auto 45px auto;
+    color: #6d6e71;
 }
 
 #single_post_wrapper h1{
@@ -972,6 +978,134 @@ li.album_link a:active, li.album_link a:focus{
     background-size: cover;
 }
 
+#album_wrapper{
+     width: 100%;   
+}
+
+#album_hdr{
+    height: 340px;
+    width: 100%;
+    border: 24px solid #fff;
+}
+
+
+.giveitaway{
+  height: 340px;
+    background: url('/wp-content/themes/kt/img/wUSOinKandahar_hdr.jpg')  no-repeat;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;  
+}
+
+#album_wrapper .container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#album_wrapper .boxed-row{
+     padding: 0;   
+}
+
+#album_wrapper .main-album-thumb{
+     width: 288px;   
+    margin: 0 auto;
+}
+
+#album-left{
+    width: 360px; 
+    float: left;
+}
+
+#album-right{
+    width: 560px;   
+    float: right;
+}
+
+#album_wrapper h3  {
+    font-family: 'playfair_displayregular';
+    color: #6d6e7a;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: left;
+    margin: 0 20px 30px 30px; 
+}
+
+#album_wrapper h4{
+    color: #6d6e7a; 
+    font-size: 17px;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 auto 20px auto;
+}
+
+.buy_link_container{
+    width: 300px; 
+    margin: -10px auto 0 auto;   
+}
+
+.other-albums-thumb{
+    width: 157px;
+    height: 157px;   
+    margin-bottom: 20px;
+    float: left;
+}
+
+.other-albums-thumb-right{
+    width: 157px;
+    height: 157px;   
+    margin-bottom: 20px; 
+    float: right;
+}
+
+#lyrics{
+    margin-top: 80px; 
+    font-size: 17px;
+    line-height: 39px;
+}
+
+#lyrics td.num{
+    25px;
+    color: #cf122a;
+}
+
+#lyrics td.track{
+    100%;
+}
+
+#lyrics td.time{
+    70px;
+}
+
+#lyrics td.link{
+    40px;
+}
+
+#lyrics a:link, #lyrics a:visited{
+    color: #6d6e71;
+    border-bottom: 1px solid #6d6e71;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-weight: 200;    
+}
+
+#lyrics a:hover{
+    color: #cfd0d0;
+    border-bottom: 1px solid #cfd0d0;  
+}
+
+#lyrics a:active, #lyrics a:focus{
+    color: #6d6e71;
+    border-bottom: 1px solid #6d6e71;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-weight: 200;    
+}
+
 #news{
     min-height: 300px;
     background: url('img/news_hdr.jpg')  no-repeat;
@@ -990,7 +1124,7 @@ li.album_link a:active, li.album_link a:focus{
   -moz-background-size: cover; 
   -o-background-size: cover; 
   background-size: cover;
-    border: 24px #fff solid;   
+    border: 24px #fff solid; 
 }
 
 #news-nav .navbar-brand{
@@ -1013,19 +1147,20 @@ li.album_link a:active, li.album_link a:focus{
         max-width: 950px;
         float: left; 
         margin-left: -50px;   
+        clear: none;
     }
 
-    
-aside #calendar_container{
-         float: right;   
-    }
+#news_page_wrapper #blog_preview_container{
+        margin-top: 350px;
+        width: 940px;
 
-#news_page_wrapper{
-    width: 100%;
-    padding: 0 60px;
 }
 
 
+#news_page_wrapper{
+    width: 100%;
+    padding: 0;
+}
 
 #newsbox.boxed-row{
     width: 100%; 
@@ -1037,16 +1172,6 @@ aside #calendar_container{
      padding-top: 65px; 
     text-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
 }
-
-
-#news_page_wrapper #news_calendar{
-     width: 1380px;   
-    margin: 0 auto;
-    position: relative;
-}
-
-
-
 
 .blog_preview{
     width: 295px;
@@ -1179,6 +1304,11 @@ aside #calendar_container{
     float: left;
     background-color: #eaeaea;  
     position: relative;
+}
+
+#news_page_wrapper #calendar_container{
+    clear: none;
+    float: right;
 }
 
 #calendar_container h4{
@@ -1736,7 +1866,7 @@ button.close {
 }
 
 
-#BookKeni .modal-dialog{
+.modal-dialog{
         width: 680px;
 }
 
@@ -1752,11 +1882,11 @@ button.close {
      color: #fff;   
 }
 
-#BookKeni .modal-content{
+.modal-content{
      background-color: #15374f;   
 }
 
-#BookKeni .close{
+.close{
      margin: -65px -50px;   
 }
 
@@ -1843,7 +1973,7 @@ button.close {
 #topVidModal .modal-header .close{
     color: #fff;
     height: 100px;
-    z-index: 1041;
+    z-index: 1080;
     font-size: 50px;
     position: absolute;
     right: 0;
@@ -1857,15 +1987,6 @@ button.close {
     min-height: 800px;
 
 }
-
-    
-.resp{
-     display: none;   
-}
-
-
-
-
 
 .lg-hide{
      display: none;   

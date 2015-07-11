@@ -1,17 +1,13 @@
 <?php /* Template Name: News &amp; Calendar */ include 'news_header.php'; ?>
         
 
-
-			
-			
-			
       <div id="news_page_wrapper">
 <div id="news_calendar" class="container" > 
           <div id="newsbox" class="row boxed-row" >
                 
                       <div id="blog_preview_container" >
         <?php
-$args = array( 'post_type' => 'news', 'posts_per_page' => 6 );
+$args = array( 'post_type' => 'news', 'posts_per_page' => 20 );
 $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	     <div class="blog_preview">     
@@ -53,13 +49,14 @@ while ( $loop->have_posts() ) : $loop->the_post(); ?>
 <?php endwhile; 
     wp_reset_query(); ?>
                         </ul>
-                        
                         <div class="more-link"><a href="/news_calendar">More Dates</a></div>
                       </aside>
                       
+
                       <div class="clearfix"></div>
 
-<br class="clear"/>
+
+
                    
                                       </div>
                                       </div>
