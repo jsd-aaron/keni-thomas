@@ -13,34 +13,17 @@
     </video>
         
    <div id="vid-content" >
-       <a href="#" data-toggle="modal" data-target="#BookKeni"><div class="bug-white"><p><span class="image-replace">Book Keni</span></p></div></a>
-       
-        <!-- Modal -->   
-       
-         
-         
+       <?php include 'modal-topvideo.php'; ?>
+       <a href="#" data-toggle="modal" data-target="#BookKeni">
+       <div class="bug-white"><p><span class="image-replace">Book Keni</span></p></div>
+       </a>   
+<!-- Modal -->   
            <h2>Motivational<br class="lg-hide"/> Speaker<br/>Extraordinary<br class="lg-hide"/> Storyteller</h2>
       <p>&ldquo;Never has a speaker grabbed me like Keni. His story has forever changed me moving forward&rdquo;</p>
         <p class="quote-attribution">&mdash; Fire Chief Manio Orangio</p>
-       <p><a href="#learnmore"><span class="top_btn">Learn More</span></a><a href="#learnmore"><span class="top_btn" data-toggle="modal" data-target="#topVidModal">Watch Video</span></a></p>
-    
-        <!-- Modal -->   
+       <p><a href="#learnmore"><span class="top_btn">Learn More</span></a><span class="top_btn" data-toggle="modal" data-target="#topVidModal">Watch Video</span></p>  
        
-         <div class="modal fade" id="topVidModal" tabindex="-1" role="dialog" aria-labelledby="topVidModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-     <div class="modal-header">
-         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="wp-content/themes/kt/img/x.svg" alt="close icon"/></button>
-     </div>
-      <div class="modal-body">
-        
-        <div id="modal-video">
-          <iframe src="https://www.youtube.com/embed/4OgibCrmYJk" width="800" height="800"  allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
         
         </div>
 </div>
@@ -168,6 +151,7 @@
         <div class="row boxed-row">
            <div id="client-logos">
               <p>From convention halls and classrooms, to the factory floor and the front lines, Keni Thomas is trusted by:</p>
+               <div id="logo-images">
                <img src="wp-content/themes/kt/img/cocacola.svg" alt="Coca Cola logo">
                <img src="wp-content/themes/kt/img/cedarcreek.svg" alt="Cedar Creek logo">
                <img src="wp-content/themes/kt/img/exxon.svg" alt="Exxon logo">
@@ -176,6 +160,7 @@
                <img src="wp-content/themes/kt/img/osha.svg" alt="OSHA logo">
                <img src="wp-content/themes/kt/img/tcu.svg" alt="TCU logo">
                <img src="wp-content/themes/kt/img/usairforce.svg" alt="US Airforce logo">
+               </div>
            </div>
             
         </div>
@@ -304,7 +289,7 @@ They will discover a new understanding of what it really means to be counted on 
                          <img src="wp-content/themes/kt/img/Gunslinger-180.jpg" alt="Gunslinger Album by Keni Thomas"/> 
                            <h5>2008<br/>Gunslinger</h5>
                            <ul class="album">
-                               <li class="album_link"><a href="#">Listen</a></li>
+                               <li class="album_link"><a href="/gunslinger-2008/">Listen</a></li>
                                <li class="album_link"><a href="#">Store</a></li>
                                <li class="album_link"><a href="#">iTunes</a></li>
                            </ul>
@@ -314,7 +299,7 @@ They will discover a new understanding of what it really means to be counted on 
                           <img src="wp-content/themes/kt/img/flags-of-our-fathers.jpg" alt="Flags of Our Father Album by Keni Thomas"/> 
                            <h5>2005<br/>Flags of Our Father</h5>
                            <ul class="album">
-                               <li class="album_link"><a href="#">Listen</a></li>
+                               <li class="album_link"><a href="/flags-of-our-father-2005/">Listen</a></li>
                                <li class="album_link"><a href="#">Store</a></li>
                                <li class="album_link"><a href="#">iTunes</a></li>
                            </ul>
@@ -330,25 +315,25 @@ They will discover a new understanding of what it really means to be counted on 
                       <div class="col-md-3">
                           <p>Hold the Line</p>
                            <div class="play_btn">
-                               <span class="glyphicon glyphicon-play"></span>
+                               <span class="glyphicon glyphicon-play" data-toggle="modal" data-target="#topVidModal"></span>
                            </div>
                        </div>
                        <div class="col-md-3">
                           <p>Gunslinger</p>
                            <div class="play_btn">
-                               <span class="glyphicon glyphicon-play"></span>
+                               <span class="glyphicon glyphicon-play" data-toggle="modal" data-target="#topVidModal"></span>
                            </div>
                        </div>
                        <div class="col-md-3">
                           <p>Shrevport 2 LA</p>
                            <div class="play_btn">
-                               <span class="glyphicon glyphicon-play"></span>
+                               <span class="glyphicon glyphicon-play" data-toggle="modal" data-target="#topVidModal"></span>
                            </div>
                        </div>
                        <div class="col-md-3">
                           <p>Mexico</p>
                            <div class="play_btn">
-                               <span class="glyphicon glyphicon-play"></span>
+                               <span class="glyphicon glyphicon-play" data-toggle="modal" data-target="#topVidModal"></span>
                            </div>
                        </div>
                        <div class="clearfix"></div>
@@ -392,7 +377,7 @@ while ( $loop->have_posts() ) : $loop->the_post(); ?>
                        <h4>Calendar</h4>
                        <ul class="calendar_list">
              <?php
-$args = array( 'post_type' => 'calendar', 'posts_per_page' => 20 );
+$args = array( 'post_type' => 'calendar', 'posts_per_page' => 6 );
 $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) : $loop->the_post(); ?>
                           
@@ -418,6 +403,7 @@ while ( $loop->have_posts() ) : $loop->the_post(); ?>
                 </div>
               </div>   
              <?php include 'modal-bookkeni.php'; ?>
+            
    
 
 

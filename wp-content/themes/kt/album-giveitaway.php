@@ -23,8 +23,8 @@
 
             <h4>Other Albums</h4>
 
-            <div class="other-albums-thumb"><a href="#"><img src="/wp-content/themes/kt/img/Gunslinger-180.jpg" alt="gunslinger Keni Thomas album cover" /></a></div>
-            <div class="other-albums-thumb-right"><a href="#"><img src="/wp-content/themes/kt/img/FlagsOfOurFathers-180.jpg" alt="Flags of Our Fathers Keni Thomas album cover" /></a></div>
+            <div class="other-albums-thumb"><a href="/gunslinger-2008/"><img src="/wp-content/themes/kt/img/Gunslinger-180.jpg" alt="gunslinger Keni Thomas album cover" /></a></div>
+            <div class="other-albums-thumb-right"><a href="/flags-of-our-father-2005/"><img src="/wp-content/themes/kt/img/FlagsOfOurFathers-180.jpg" alt="Flags of Our Fathers Keni Thomas album cover" /></a></div>
             <div class="clearfix"></div>
              <div class="violator">
                 <img src="/wp-content/themes/kt/img/gift.svg" alt="free gift">

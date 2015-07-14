@@ -127,9 +127,6 @@ body{
 video{
     position: relative;
     min-width: 100%;
-    
-
-
 }
 
 .embed-responsive, .embed-responsive-16by9{
@@ -387,9 +384,10 @@ span.top_btn {
 
 #vid-content{
     position: relative;
-    margin: -54px auto 0 auto;
+    margin: -48px auto 0 auto;
     height: 662px;
     background-color: rgba(0,0,0,.25);
+    border: 16px solid #fff;
 }
 
 #vid-content button{
@@ -686,6 +684,10 @@ span.carousel-separator::after{
     display: inline;
     float: left;
     position: relative;
+}
+
+#logo-images{
+     margin-left: 60px;   
 }
 
 #about .boxed-row{
@@ -1106,6 +1108,44 @@ li.album_link a:active, li.album_link a:focus{
     font-weight: 200;    
 }
 
+#album_wrapper .lyricmodal .close{
+    margin-top: -65px;
+}
+
+#album_wrapper .lyricmodal{
+    width: 680px;
+    height: 728px;
+    color: #fff;   
+    font-size: 17px;
+    line-height: 22px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+#album_wrapper .lyricmodal h4{
+    font-size: 40px;
+    line-height: 37px;
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+#album_wrapper .lyricmodal p span.separator{  
+    margin-top: -15px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.modal-content .down_arrow{
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.modal-content .down_arrow img{
+    width: 9px;
+    margin-left: 18px;
+}
+
 #news{
     min-height: 300px;
     background: url('img/news_hdr.jpg')  no-repeat;
@@ -1264,6 +1304,10 @@ li.album_link a:active, li.album_link a:focus{
     letter-spacing: 2px;
 }
 
+#nav-below{
+    clear: left;
+}
+
 /* ellipsis */
 
 .clamped {
@@ -1306,9 +1350,16 @@ li.album_link a:active, li.album_link a:focus{
     position: relative;
 }
 
+#news_page_wrapper #newsbox{
+     clear: none;   
+}
+
 #news_page_wrapper #calendar_container{
     clear: none;
     float: right;
+    min-height: 600px;
+    height: auto;
+    margin-top: 350px;
 }
 
 #calendar_container h4{
@@ -1407,10 +1458,17 @@ li.album_link a:active, li.album_link a:focus{
 
 }
 
+
 #single_post_wrapper #news_hdr_container img{
      max-width: 890px;
     min-width: 890px;
 }
+
+#single_post_wrapper iframe{
+     width: 100%;
+    min-height: 500px;
+}
+
 
 #single_post_wrapper .bug-red{
      margin: 0 -150px -50px 0;   
@@ -1419,6 +1477,7 @@ li.album_link a:active, li.album_link a:focus{
 #single_post_wrapper .boxed-row{
     max-width: 890px;
     margin: 0 auto;
+    padding: 0 0 0 0;
 }
 
 
@@ -1427,8 +1486,9 @@ li.album_link a:active, li.album_link a:focus{
     font-family: 'franklin_gothic_fsbook', sans-serif; 
     font-size: 17px;
     line-height: 22px;
-    padding: 0 45px;
+    padding: 0 20px;
     letter-spacing: 1px;
+    margin: 0 auto;
 }
 
 
@@ -1466,7 +1526,6 @@ p.wp-caption-text{
 .aligncenter, .alignleft, .alignnone, .alignright{
     margin: 0 auto;
 }
-
 
 .single-tags{
     max-width: 70%;
@@ -1847,6 +1906,9 @@ ul.footer-social li.s a:active, ul.footer-social li.s a:focus{
   text-shadow: 0 0 0 #fff;
   filter: none;
   opacity: 1;
+    
+}
+
 }
 .close:hover,
 .close:focus {
@@ -1862,7 +1924,7 @@ button.close {
   cursor: pointer;
   background: none;
   border: 0;
-    color: #fff;
+    color: #fff;  
 }
 
 
@@ -1965,6 +2027,10 @@ button.close {
 
 /* video modal */
 
+
+#BookKeni .close{
+    margin-top: -65px;    
+}
 
 #topVidModal .modal-dialog .modal-content{
      background-color: none;    
@@ -2652,10 +2718,6 @@ button.close {
       background-size: cover;
         border: 10px #fff solid;
         margin-top: 100px;
-    }
-    
-    #newsbox{
-        width: 100%;
     }
     
     .row.boxed-row{

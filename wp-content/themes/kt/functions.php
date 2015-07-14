@@ -76,6 +76,8 @@ if (function_exists('add_theme_support'))
 
     // Localisation Support
     load_theme_textdomain('html5blank', get_template_directory() . '/languages');
+    // Add Format
+    add_theme_support( 'post-formats', array( 'standard', 'video' ) );
 }
 
 /*------------------------------------*\
@@ -411,6 +413,29 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 
 // Shortcodes above would be nested like this -
 // [html5_shortcode_demo] [html5_shortcode_demo_2] Here's the page title! [/html5_shortcode_demo_2] [/html5_shortcode_demo]
+// posts per page based on CPT
+//function iti_custom_posts_per_page($query)
+//{
+//    switch ( $query->query_vars['post_type'] )
+//    {
+//        case 'news':  // Post Type named 'news'
+//            $query->query_vars['posts_per_page'] = 6;
+//            break;
+//
+//        case 'calendar':  // Post Type named 'calendar'
+//            $query->query_vars['posts_per_page'] = 6;
+//            break;
+//
+//        default:
+//            break;
+//    }
+//    return $query;
+//}
+//
+//if( !is_admin() )
+//{
+//    add_filter( 'pre_get_posts', 'iti_custom_posts_per_page' );
+//}
 
 /*------------------------------------*\
 	Custom Post Types
@@ -444,7 +469,8 @@ function create_post_type_news()
             'title',
             'editor',
             'excerpt',
-            'thumbnail'
+            'thumbnail',
+            'post-formats'
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'can_export' => true, // Allows export in Tools > Export
         'taxonomies' => array(
@@ -454,6 +480,7 @@ function create_post_type_news()
     ));
     
 }
+
 
 function create_post_type_calendar()
 {

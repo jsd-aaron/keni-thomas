@@ -6,10 +6,17 @@
           <div id="newsbox" class="row boxed-row" >
                 
                       <div id="blog_preview_container" >
-        <?php
-$args = array( 'post_type' => 'news', 'posts_per_page' => 20 );
-$loop = new WP_Query( $args );
-while ( $loop->have_posts() ) : $loop->the_post(); ?>
+        
+
+<?php
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$loop = new WP_Query( array(
+'post_type' => 'news',
+'posts_per_page' => 6,
+'orderby'=> 'menu_order',
+'paged'=>$paged
+) ); ?>
+     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	     <div class="blog_preview">     
 
 	<div class="blog_thumb_container" >
@@ -20,18 +27,26 @@ while ( $loop->have_posts() ) : $loop->the_post(); ?>
         <span class="ellipsis">&hellip;</span>
                                  <span class="fill"></span>
                           </div>
-<?php endwhile; 
-    wp_reset_query(); ?>
+                       
+                          
+<?php endwhile; ?>
+    
+                          
                   <div class="clearfix"></div>
-                             
-                  <div class="more-link" ><a href="#">More Posts</a></div> 
+                        <div id="nav-below"><a href="<?php next_posts(); ?>" >More Posts</a></div>   
                   </div>
-                  </div>
-<aside id="calendar_container" >
+                  
+                  
+
+                      
+
+                      
+                                     
+                                     <aside id="calendar_container" >
                        <h4>Calendar</h4>
                        <ul class="calendar_list">
              <?php
-$args = array( 'post_type' => 'calendar', 'posts_per_page' => 20 );
+$args = array( 'post_type' => 'calendar' );
 $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) : $loop->the_post(); ?>
                           
@@ -51,27 +66,8 @@ while ( $loop->have_posts() ) : $loop->the_post(); ?>
                         </ul>
                         <div class="more-link"><a href="/news_calendar">More Dates</a></div>
                       </aside>
-                      
-
-                      <div class="clearfix"></div>
-
-
-
-                   
+                                    
                                       </div>
                                       </div>
-                     
-			
-			
-
-
-			
-			
-			
-			
-			
-
-
-
-
-<?php get_footer(); ?>
+                                      </div>
+<?php include 'single-footer.php'; ?>
