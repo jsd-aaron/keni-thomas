@@ -678,7 +678,6 @@ span.carousel-separator::after{
 }
 
 
-
 #client-logos img{
     width: 115px;
     display: inline;
@@ -1193,7 +1192,6 @@ li.album_link a:active, li.album_link a:focus{
 #news_page_wrapper #blog_preview_container{
         margin-top: 350px;
         width: 940px;
-
 }
 
 
@@ -1617,6 +1615,120 @@ p.wp-caption-text{
     font-size: 10px;
     margin-top: 20px;
 }
+
+/* SHOP */
+
+#shop-nav{
+    min-height: 400px;
+    background: url('img/shop_keni.jpg') 0 50px no-repeat;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+    border: 24px #fff solid; 
+}
+
+#shop-nav .navbar-brand{
+    margin-top: -24px;
+    left: -10px;
+    position: absolute;
+}
+
+#shop-nav h1{
+     margin-top: -75px;
+}
+
+#product-preview-container{
+    margin-top: 250px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#product-preview-container .page-title{
+        display: none;
+}
+
+ul.products{
+     list-style-type: none; 
+    margin-left: 30px;
+}
+
+ul.products h3{
+    font-family: 'playfair_displayregular', serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6d6e71;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+ul.products li{
+    float: left;
+    width: 226px;
+    height: 450px;
+    margin: 0 20px;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+ul.products span.price{
+    padding: 0;   
+}
+
+ul.products li img.attachment-shop_catalog{
+    width: 226px;
+    height: 226px;
+}
+
+#product-preview-container .woocommerce-pagination{
+       clear: both; 
+}
+
+#product-preview-container .woocommerce-pagination ul li{
+     display: inline;   
+}
+
+.woocommerce-breadcrumb{
+    font-size: 17px;
+    line-height: 22px;
+    border-bottom: 1px solid #cfd0d0;
+    padding-bottom: 15px;
+    margin-bottom: 60px;
+}
+
+
+
+#single-prouduct_wrapper #product-preview-container{
+    margin-top: 0;
+}
+
+
+
+#single-prouduct_wrapper #product-preview-container .row .boxed-row{
+     padding-top: 0;
+}
+
+#single-prouduct_wrapper .woocommerce-main-image img{
+     max-width: 275px;  
+    float: left;
+}
+
+#single-prouduct_wrapper #shop.container{
+    float: left;
+    max-width:   675px;
+}
+
+#single-prouduct_wrapper .sidebar{
+    width: 200px; 
+    float: left;
+    
+}
+
+/* footer */
 
 
 footer{

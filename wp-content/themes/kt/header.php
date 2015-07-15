@@ -56,7 +56,7 @@
         <li><a href="#music" class="mob-off">Music</a></li>
         <li><a href="#news_calendar" class="mob-off">News</a></li>
         <li><a href="#news_calendar" class="mob-off">Calendar</a></li>
-        <li><a href="#store" class="mob-off">Store</a></li>
+        <li><a href="/shop/" class="mob-off">Store</a></li>
         <li><a href="#contact" class="mob-off">Contact</a></li>       
         
       </ul>

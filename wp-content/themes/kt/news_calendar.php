@@ -70,4 +70,5 @@ while ( $loop->have_posts() ) : $loop->the_post(); ?>
                                       </div>
                                       </div>
                                       </div>
+                                       <?php include 'modal-bookkeni.php'; ?>
 <?php include 'single-footer.php'; ?>
