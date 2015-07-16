@@ -62,11 +62,12 @@
       
       
     </div><!-- /.navbar-collapse -->
+    
   </div><!-- /.container-fluid -->
-<a href="#" data-toggle="modal" data-target="#BookKeni"><div class="bug-white"></div></a>
-<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
-</nav>
 
+
+</nav>
+<div id="shop_hdr_img"><a href="#" data-toggle="modal" data-target="#BookKeni"><div class="bug-white"></div></a><h2 class="page-title"><?php woocommerce_page_title(); ?></h2></div>
 
 <div id="top"></div>
  
