@@ -14,9 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<div id="single-prouduct_wrapper">
-<div id="shop" class="container" > 
-          <div id="product-preview-container" class="row boxed-row" >
+
 
 <?php
 	/**
@@ -79,9 +77,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 </div><!-- #product-<?php the_ID(); ?> -->
     
 <?php do_action( 'woocommerce_after_single_product' ); ?>
-</div>
 
-</div>
 <?php get_sidebar(); ?>
 <div class="clearfix"></div>
-</div>
+

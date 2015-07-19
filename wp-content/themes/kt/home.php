@@ -21,7 +21,7 @@
            <h2>Motivational<br class="lg-hide"/> Speaker<br/>Extraordinary<br class="lg-hide"/> Storyteller</h2>
       <p>&ldquo;Never has a speaker grabbed me like Keni. His story has forever changed me moving forward&rdquo;</p>
         <p class="quote-attribution">&mdash; Fire Chief Manio Orangio</p>
-       <p><a href="#learnmore"><span class="top_btn">Learn More</span></a><span class="top_btn" data-toggle="modal" data-target="#topVidModal">Watch Video</span></p>  
+       <p><span class="top_btn"><a href="#learnmore">Learn More</a></span><span class="top_btn" data-toggle="modal" data-target="#topVidModal"><a href="#">Watch Video</a></span></p>
        
 
         
