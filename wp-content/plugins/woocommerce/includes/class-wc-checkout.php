@@ -84,7 +84,8 @@ class WC_Checkout {
 	 * @access public
 	 */
 	public function __construct () {
-		add_action( 'woocommerce_checkout_billing', array( $this,'checkout_form_billing' ) );
+		 echo '<div class="checkout-only">';
+        add_action( 'woocommerce_checkout_billing', array( $this,'checkout_form_billing' ) );
 		add_action( 'woocommerce_checkout_shipping', array( $this,'checkout_form_shipping' ) );
 
 		$this->enable_signup         = get_option( 'woocommerce_enable_signup_and_login_from_checkout' ) == 'yes' ? true : false;
@@ -724,7 +725,8 @@ class WC_Checkout {
 			unset( WC()->session->refresh_totals, WC()->session->reload_checkout );
 			exit;
 		}
-	}
+echo '</div>';
+    }
 
 	/**
 	 * Get a posted address field after sanitization and validation.
@@ -800,4 +802,5 @@ class WC_Checkout {
 			}
 		}
 	}
+
 }
