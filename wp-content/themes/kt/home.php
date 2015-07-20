@@ -6,7 +6,7 @@
       <div class="embed-responsive embed-responsive-4by3">
       
     <video autoplay muted loop class="embed-responsive-item">
-        <source src=wp-content/themes/kt/media/kenidemo.mp4 type=video/mp4>
+        <source src=wp-content/themes/kt/media/gloryland.mp4 type=video/mp4>
         <source src="media/demo.ogv" type="video/ogg">
   <source src="media/demo.webm" type="video/webm">
 

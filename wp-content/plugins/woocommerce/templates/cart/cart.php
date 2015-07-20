@@ -18,6 +18,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 <div class="container">
 <div class="row boxed-row">
 <?php woocommerce_breadcrumb(); ?>
+<h3>Cart</h3>
 <form action="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" method="post">
 
 <?php do_action( 'woocommerce_before_cart_table' ); ?>
@@ -139,7 +140,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 		<?php do_action( 'woocommerce_after_cart_contents' ); ?>
 	</tbody>
 </table>
-
+    <a href="/shop/"><div id="continue_shopping">continue shopping</div></a>
 <?php do_action( 'woocommerce_after_cart_table' ); ?>
 
 </form>
