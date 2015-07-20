@@ -1,7 +1,8 @@
 
     
 
-    <?php /* Template Name: Shop Page */ include 'shop_header.php'; ?>
+    
+    <?php get_header('shop'); ?>
 
 	<main role="main">
 		<!-- section -->

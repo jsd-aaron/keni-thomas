@@ -139,7 +139,6 @@ function wc_clear_cart_after_payment() {
 	}
 }
 add_action( 'get_header', 'wc_clear_cart_after_payment' );
-
 /**
  * Get the subtotal
  *

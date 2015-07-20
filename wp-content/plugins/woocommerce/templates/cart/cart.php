@@ -14,7 +14,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
-
+<div id="shopping_cart_page_wrapper">
+<div class="container">
+<div class="row boxed-row">
+<?php woocommerce_breadcrumb(); ?>
 <form action="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" method="post">
 
 <?php do_action( 'woocommerce_before_cart_table' ); ?>
@@ -146,5 +149,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 	<?php do_action( 'woocommerce_cart_collaterals' ); ?>
 
 </div>
-
+</div><!-- close row boxed row-->
+</div><!-- close container-->
+</div><!-- close shopping wrapper-->
 <?php do_action( 'woocommerce_after_cart' ); ?>

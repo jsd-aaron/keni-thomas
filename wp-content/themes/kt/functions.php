@@ -578,4 +578,13 @@ function woo_remove_product_tabs( $tabs ) {
 
 }
 add_filter( 'wc_product_sku_enabled', '__return_false' );
+// Removes Product Successfully Added to Cart
+ 
+add_filter( 'wc_add_to_cart_message', 'custom_add_to_cart_message' );
+  
+function custom_add_to_cart_message() {
+  
+echo '<style>.woocommerce-message {display: none !important;}</style>';
+ 
+}
 ?>
