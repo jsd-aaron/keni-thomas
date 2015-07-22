@@ -156,7 +156,7 @@ $("a[href^='#']").on('click', function(e) {
       <script type="text/javascript">
       
           $('#topVidModal').on('shown.bs.modal', function () {
-  $('#myInput').focus()
+  $('#myInput').focus();
 })
       
       </script>  
@@ -165,10 +165,19 @@ $("a[href^='#']").on('click', function(e) {
           <script type="text/javascript">
       
           $('#BookKeni1').on('shown.bs.modal', function () {
-  $('#myInput').focus()
+  $('#myInput').focus();
 })
       
-      </script>    
+      </script>   
+      
+        <script type="text/javascript">
+      
+          $('#CarrotModal').on('shown.bs.modal', function () {
+  $('#myInput').focus();
+})
+      
+      </script>  
+         
       
       <script type="text/javascript">
       //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG

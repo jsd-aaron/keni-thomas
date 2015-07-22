@@ -35,11 +35,8 @@
 </div>
 
 <div id="single-social">
-    
-               <ul class="footer-social">
-                <li class="f"><a href="https://www.facebook.com/kenithomas" target="_blank"><span class="image-replace">facebook</span></a></li>
-                <li class="t"><a href="https://twitter.com/kenithomas" target="_blank"><span class="image-replace">twitter</span></a></li>
-    </ul>
+    <?php adj_social_media(); ?>
+               
     <p><span>Share</span></p>
     <div class="clearfix"></div>
 </div>

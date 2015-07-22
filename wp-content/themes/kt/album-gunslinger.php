@@ -16,7 +16,7 @@
             <h3>Buy Now:</h4>
             <ul class="album">
                <li class="album_link"><a href="#">Store</a></li>
-               <li class="album_link"><a href="#">iTunes</a></li>
+               <li class="album_link"><a href="https://itun.es/us/AySGI" target="_blank">iTunes</a></li>
             </ul>
             <div class="clearfix"></div>
             </div>
@@ -27,9 +27,9 @@
             <div class="other-albums-thumb-right"><a href="flags-of-our-father-2005/"><img src="/wp-content/themes/kt/img/FlagsOfOurFathers-180.jpg" alt="Flags of Our Fathers Keni Thomas album cover" /></a></div>
             <div class="clearfix"></div>
              <div class="violator">
-                <img src="/wp-content/themes/kt/img/gift.svg" alt="free gift">
+                <img data-toggle="modal" data-target="#CarrotModal" src="/wp-content/themes/kt/img/gift.svg" alt="free gift">
                 <p><span class="violator-header">Keni's Single &ldquo;Hold the Line&rdquo;</span></p>
-                <p><a href="#">Download PDF</a></p>
+                <p><a href="#" data-toggle="modal" data-target="#CarrotModal">Download MP3</a></p>
                 </div>
                 </aside>
          </div>
@@ -40,56 +40,67 @@
               <table id="lyrics" width="100%" border="0">
   <tr>
     <td class="num">1</td>
-    <td class="track">TK</td>
-    <td class="time">3:50</td>
+    <td class="track">Shrevport 2 LA</td>
+    <td class="time">4:12</td>
     <td class="link"><a href="#" data-toggle="modal" data-target="#LyricsModal-give1">Lyrics</a></td>
   </tr>
   <tr>
     <td class="num">2</td>
-    <td >TK</td>
-    <td>3:30</td>
+    <td >Out of Nowhere</td>
+    <td>3:16</td>
     <td><a href="#">Lyrics</a></td>
   </tr>
   <tr>
     <td class="num">3</td>
-    <td>TK</td>
-    <td>4:14</td>
+    <td>Everything</td>
+    <td>3:46</td>
     <td><a href="#">Lyrics</a></td>
   </tr>
   <tr>
     <td class="num">4</td>
-    <td>TK</td>
-    <td>4:20</td>
+    <td>Billboards 4 Jesus</td>
+    <td>4:13</td>
     <td><a href="#">Lyrics</a></td>
   </tr>
   <tr>
     <td class="num">5</td>
-    <td>Hold the Line</td>
-    <td>3:26</td>
+    <td>Not Ready for Love</td>
+    <td>3:24</td>
     <td><a href="#">Lyrics</a></td>
   </tr>
   <tr>
     <td class="num">6</td>
-    <td>Car Ride</td>
-    <td>4:41</td>
+    <td>Free</td>
+    <td>4:01</td>
     <td><a href="#">Lyrics</a></td>
   </tr>
   <tr>
     <td class="num">7</td>
-    <td>Joined at the Heart</td>
-    <td>3:25</td>
+    <td>Gunslinger</td>
+    <td>3:40</td>
     <td><a href="#">Lyrics</a></td>
   </tr>
   <tr>
     <td class="num">8</td>
-    <td>Hold Fast</td>
-    <td>3:44</td>
+    <td>Summertown</td>
+    <td>4:16</td>
     <td><a href="#">Lyrics</a></td>
   </tr>
     <tr>
     <td class="num">9</td>
-    <td>You Are My God</td>
-    <td>3:36</td>
+    <td>That One Is My Dad</td>
+    <td>4:07</td>
+    <td><a href="#">Lyrics</a></td>
+  </tr><tr>
+    <td class="num">10</td>
+    <td>Blame It On Me</td>
+    <td>3:29</td>
+    <td><a href="#">Lyrics</a></td>
+  </tr>
+  <tr>
+    <td class="num">11</td>
+    <td>In God's Hands</td>
+    <td>3:53</td>
     <td><a href="#">Lyrics</a></td>
   </tr>
   
@@ -104,6 +115,6 @@
 
 <?php include 'modal-giveitaway.php'; ?>
 <?php include 'modal-bookkeni.php'; ?>
-
+<?php include 'modal-carrot.php'; ?>
 <?php include 'single-footer.php'; ?>
 

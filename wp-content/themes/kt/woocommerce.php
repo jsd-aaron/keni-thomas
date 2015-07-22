@@ -1,7 +1,3 @@
-
-    
-
-    
     <?php get_header('shop'); ?>
 
 	<main role="main">
@@ -14,8 +10,9 @@
 		<?php woocommerce_content(); ?>
     </div></div></div>
 		</section>
+
 		<!-- /section -->
 	</main>
  <?php include 'modal-bookkeni.php'; ?>
 
-<?php include 'single-footer.php'; ?>
+<?php include 'shop-footer.php'; ?>

@@ -587,4 +587,12 @@ function custom_add_to_cart_message() {
 echo '<style>.woocommerce-message {display: none !important;}</style>';
  
 }
+
+// SOCIAL MEDIA SHARE
+function adj_social_media() {
+$post_url = get_permalink();
+$title = get_the_title();
+    echo '<ul class="footer-social"><li class="f"><a href="https://www.facebook.com/sharer/sharer.php?u='. $post_url .'target="_blank"><span class="image-replace">facebook</span></a></li>';
+    echo '<li class="t"><a href="https://twitter.com/intent/tweet?text='. $title .':&url='. $post_url .'" target="_blank"><span class="image-replace">twitter</span></a></li></ul>';
+}
 ?>

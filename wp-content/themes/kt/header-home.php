@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/wp-content/themes/kt/style.css'); ?>" type="text/css" media="screen" />
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,19 +23,22 @@
     <![endif]-->
 
 <?php wp_head(); ?>
+
+
   </head>
   
-  <body data-spy="scroll" data-target="#navlist" >
+  <body data-spy="scroll" data-target="#navlist">
   <header>
-      <nav id="shop-nav" class="navbar navbar-default navbar-fixed-top" role="navigation" >
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
   <div class="container">
    
+    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" id="togglenav" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
 <span class="navbar-toggle-minus-hide">Menu -</span> <span class="navbar-toggle-plus">Menu +</span> 
       </button>
-        <a href="/" class="navbar-brand"><span class="image-replace">Keni Thomas</span></a>
+        <a href="#top" class="navbar-brand"><span class="image-replace">Keni Thomas</span></a>
 
     </div>
 
@@ -48,40 +50,28 @@
        
         
 
-        <li><a href="/#learnmore" class="mob-off">Learn More</a></li>
-        <li><a href="/#about" class="mob-off">About</a></li>
-        <li><a href="/#speaker" class="mob-off">Speaker</a></li>
-        <li><a href="/#music" class="mob-off">Music</a></li>
-        <li><a href="/news" class="mob-off">News</a></li>
-        <li><a href="/news" class="mob-off">Calendar</a></li>
+        <li><a href="#learnmore" class="mob-off">Learn More</a></li>
+        <li><a href="#about" class="mob-off">About</a></li>
+        <li><a href="#speaker" class="mob-off">Speaker</a></li>
+        <li><a href="#music" class="mob-off">Music</a></li>
+        <li><a href="#news" class="mob-off">News</a></li>
+        <li><a href="#news" class="mob-off">Calendar</a></li>
         <li><a href="/shop/" class="mob-off">Store</a></li>
-        <li><a href="/#contact" class="mob-off">Contact</a></li>       
+        <li><a href="#contact" class="mob-off">Contact</a></li>       
         
       </ul>
       </div>
-      
-      
     </div><!-- /.navbar-collapse -->
-    
   </div><!-- /.container-fluid -->
-
-
 </nav>
-<div id="shop_hdr_img"><a href="#" data-toggle="modal" data-target="#BookKeni"><div class="bug-white"></div></a><h2 class="page-title"><?php woocommerce_page_title(); ?></h2></div>
-
 <div id="top"></div>
- 
-<div class="container-fluid">
-    
-    
+
+		<div class="container-fluid">
     
 
   
         
       </div>
-
-  
-        
 
 </header>
 			<!-- /header -->

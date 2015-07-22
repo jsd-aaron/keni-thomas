@@ -1,3 +1,4 @@
+<div id="shopping_cart_page_wrapper">
 <?php
 /**
  * Cart Page
@@ -14,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
-<div id="shopping_cart_page_wrapper">
+
 <div class="container">
 <div class="row boxed-row">
 <?php woocommerce_breadcrumb(); ?>

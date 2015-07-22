@@ -16,7 +16,7 @@
             <h3>Buy Now:</h4>
             <ul class="album">
                <li class="album_link"><a href="#">Store</a></li>
-               <li class="album_link"><a href="#">iTunes</a></li>
+               <li class="album_link"><a href="https://itunes.apple.com/us/album/give-it-away/id869563993" target="_blank">iTunes</a></li>
             </ul>
             <div class="clearfix"></div>
             </div>
@@ -27,9 +27,9 @@
             <div class="other-albums-thumb-right"><a href="/flags-of-our-father-2005/"><img src="/wp-content/themes/kt/img/FlagsOfOurFathers-180.jpg" alt="Flags of Our Fathers Keni Thomas album cover" /></a></div>
             <div class="clearfix"></div>
              <div class="violator">
-                <img src="/wp-content/themes/kt/img/gift.svg" alt="free gift">
+                <img data-toggle="modal" data-target="#CarrotModal" src="/wp-content/themes/kt/img/gift.svg" alt="free gift">
                 <p><span class="violator-header">Keni's Single &ldquo;Hold the Line&rdquo;</span></p>
-                <p><a href="#">Download PDF</a></p>
+                <p><a href="#" data-toggle="modal" data-target="#CarrotModal">Download MP3</a></p>
                 </div>
                 </aside>
          </div>
@@ -104,6 +104,6 @@
 
 <?php include 'modal-giveitaway.php'; ?>
 <?php include 'modal-bookkeni.php'; ?>
-
+<?php include 'modal-carrot.php'; ?>
 <?php include 'single-footer.php'; ?>
 

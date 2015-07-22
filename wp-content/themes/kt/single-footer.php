@@ -10,29 +10,32 @@
 
       
      
-     <!-- modals -->
-  
+    <!-- modals -->
+
+      <script type="text/javascript">
+      
+          $('#topVidModal').on('shown.bs.modal', function () {
+  $('#myInput').focus();
+})
+      
+      </script>  
       
 
           <script type="text/javascript">
       
           $('#BookKeni1').on('shown.bs.modal', function () {
-  $('#myInput').focus()
+  $('#myInput').focus();
 })
       
-      </script> 
-
+      </script>   
       
-      <script type="text/javascript">
-        
-              $(function() {
-	$(".mob-off").click(function() {
-		$(".in").toggleClass("off");		
-	});
-});
-
+        <script type="text/javascript">
       
-      </script>
+          $('#CarrotModal').on('shown.bs.modal', function () {
+  $('#myInput').focus();
+})
+      
+      </script>  
       
 
 

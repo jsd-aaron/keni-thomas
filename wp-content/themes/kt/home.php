@@ -1,4 +1,4 @@
-<?php /* Template Name: Home */ get_header(); ?>
+<?php /* Template Name: Home */ include 'header-home.php'; ?>
 
 
   <div id="top-video-loop" class="row fluid-row" >
@@ -54,9 +54,9 @@
                 <p class="about-caption">Inspire and influence your audience to see themselves as vital to mission success</p>
            
                 <div class="violator sm-hide">
-                <img src="wp-content/themes/kt/img/gift.svg" alt="free gift">
+                <img src="wp-content/themes/kt/img/gift.svg" alt="free gift" data-toggle="modal" data-target="#CarrotModal"/>
                 <p><span class="violator-header">Three Ranger Principles Cruicial to Mission Success</span></p>
-                <p><a href="#">Download PDF</a></p>
+                <p><a href="#" data-toggle="modal" data-target="#CarrotModal">Download PDF</a></p>
                 </div>
                 
                 
@@ -203,7 +203,7 @@ They will discover a new understanding of what it really means to be counted on 
            
         <div class="violator">
           <img src="wp-content/themes/kt/img/gift.svg" alt="free gift">
-                <p><span class="violator-header">Keni's Introduction</span><br/><a href="#"><span class="violator-download">Download PDF</span></a></p>
+                <p><span class="violator-header">Keni's Introduction</span><br/><a href="/wp-content/themes/kt/media/Keni_Speech_Intro.pdf" target="_blank"><span class="violator-download">Download PDF</span></a></p>
        </div>
            </div>
     </div>
@@ -281,7 +281,7 @@ They will discover a new understanding of what it really means to be counted on 
                            <ul class="album">
                                <li class="album_link"><a href="/give-it-away-2014/">Listen</a></li>
                                <li class="album_link"><a href="#">Store</a></li>
-                               <li class="album_link"><a href="#">iTunes</a></li>
+                               <li class="album_link"><a href="https://itunes.apple.com/us/album/give-it-away/id869563993" target="_blank">iTunes</a></li>
                            </ul>
                        </div>
 
@@ -291,7 +291,7 @@ They will discover a new understanding of what it really means to be counted on 
                            <ul class="album">
                                <li class="album_link"><a href="/gunslinger-2008/">Listen</a></li>
                                <li class="album_link"><a href="#">Store</a></li>
-                               <li class="album_link"><a href="#">iTunes</a></li>
+                               <li class="album_link"><a href="https://itun.es/us/AySGI" target="_blank">iTunes</a></li>
                            </ul>
                        </div>
                        
@@ -301,7 +301,7 @@ They will discover a new understanding of what it really means to be counted on 
                            <ul class="album">
                                <li class="album_link"><a href="/flags-of-our-father-2005/">Listen</a></li>
                                <li class="album_link"><a href="#">Store</a></li>
-                               <li class="album_link"><a href="#">iTunes</a></li>
+                               <li class="album_link"><a href="https://itunes.apple.com/us/album/flags-of-our-fathers/id332123579" target="_blank">iTunes</a></li>
                            </ul>
                        </div>
                        <div class="clearfix"></div>
@@ -403,6 +403,7 @@ while ( $loop->have_posts() ) : $loop->the_post(); ?>
                 </div>
               </div>   
              <?php include 'modal-bookkeni.php'; ?>
+             <?php include 'modal-carrot.php'; ?>
             
    
 

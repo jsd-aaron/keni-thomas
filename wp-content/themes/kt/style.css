@@ -14,7 +14,7 @@
     MAIN
 \*------------------------------------*/
 
- 
+
 @font-face {
     font-family: 'franklin_gothic_fsbook';
     src: url('fonts/FranklinGothic-Book-webfont.eot');
@@ -303,7 +303,7 @@ select{
     margin-right: 15px;
 }
 
-.modal-body #book-form p label#modal-label-book {
+.modal-body #book-form p label#modal-label-book, .modal-body #carrot-form p label#modal-label-book {
      font-size: 17px;
     letter-spacing: 1px;
 }
@@ -505,6 +505,11 @@ span.top_btn {
 
 }
 
+#learn .container{
+     width: 100%;
+    padding: 0 100px;
+}
+
 #learn_left{
      width: 580px;  
     float: left;
@@ -521,11 +526,8 @@ span.top_btn {
     height: 94px; 
     margin: 48px 48px 0 0;
     float: right;
-    background: url('img/bug_red.svg');
-      
+    background: url('img/bug_red.svg');  
 }
-
-
 
 .bug-white{
      width: 94px;
@@ -588,9 +590,20 @@ span.top_btn {
     text-align: left;
 }
 
-.boxed-row{
-    padding: 106px 100px;  
+#learn .boxed-row{
+     padding: 0 106px;   
+}
 
+#music{
+     margin-bottom: 60px;   
+}
+
+#music_video_container{
+    padding: 100px 12px 0 12px;    
+}
+
+#music_video_container h4{
+     margin-bottom: 35px;   
 }
 
 .boxed-row img{
@@ -598,7 +611,6 @@ span.top_btn {
     height: auto;
     margin-bottom: 20px;
 }
-
 
 
 p span.separator::after { 
@@ -632,7 +644,7 @@ p span.separator::after {
     width: 100%; 
     background-color: #cf122a;
     color: #fff;
-    padding: 20px;
+    padding: 20px 20px 25px 20px;
 }
 
 .violator p{
@@ -669,7 +681,7 @@ p span.separator::after {
     color: #6d6e71;
     border-bottom: 2px Solid #6d6e71;
     padding-bottom: 5px;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 .violator a:active, .violator a:focus{
@@ -692,13 +704,7 @@ p span.separator::after {
     margin: -10px 30px 0 -10px;
 }
 
-#about span.violator-header{
-     margin-left: -25px;   
-}
 
-#about .violator a:link, #about .violator a:visited, .violator a:hover,.violator a:active, .violator a:focus{
-    margin-left: -25px;
-}
 
 /* QUOTE CAROUSEL */
 
@@ -799,7 +805,7 @@ h4.about_hdr{
     font-size: 40px;
     line-height: 53px;
     color: #6d6e71;
-    padding: 30px 170px;
+    padding: 30px 100px;
     text-transform: initial;
     border-top: 1px solid #656e71;
     border-right: none;
@@ -825,6 +831,10 @@ h4.about_hdr{
 
 #speaker h4{
      padding: 0 400px;    
+}
+
+#speaker .container{
+     width: 100%;   
 }
 
 #speaker .film_thumb{
@@ -1213,7 +1223,7 @@ li.album_link a:active, li.album_link a:focus{
     font-weight: 100;
 }
 
-#album_wrapper .lyricmodal h4{
+#album_wrapper .lyricmodal h4, #CarrotModal h4, #BookKeni h4{
     font-size: 40px;
     line-height: 37px;
     color: #fff;
@@ -1247,6 +1257,11 @@ li.album_link a:active, li.album_link a:focus{
     margin-top: 100px;
 }
 
+#news_calendar{
+         min-width: 1250px;   
+    }
+
+
 #news-nav{
     min-height: 400px;
     background: url('img/news_hdr.jpg') 0 50px no-repeat;
@@ -1268,11 +1283,6 @@ li.album_link a:active, li.album_link a:focus{
 }
 
 
-#news_calendar{
-     margin-left: 145px;   
-    }
-
-
 #blog_preview_container{
         max-width: 950px;
         float: left; 
@@ -1285,17 +1295,11 @@ li.album_link a:active, li.album_link a:focus{
         width: 940px;
 }
 
-
 #news_page_wrapper{
     width: 100%;
     padding: 0;
 }
 
-#newsbox.boxed-row{
-    width: 100%; 
-    padding: 0px;   
-    border: 0;
-}
 
 #news h2{
      padding-top: 65px; 
@@ -1337,7 +1341,6 @@ li.album_link a:active, li.album_link a:focus{
     margin-top: -130px;
     margin-bottom: 85px;
     position: relative;
-
 }
 
 #blog_preview_container h5 a:link, #blog_preview_container h5 a:visited{
@@ -1436,7 +1439,6 @@ li.album_link a:active, li.album_link a:focus{
     height: 600px;
     float: left;
     background-color: #eaeaea;  
-    position: relative;
 }
 
 #news_page_wrapper #newsbox{
@@ -1579,8 +1581,6 @@ li.album_link a:active, li.album_link a:focus{
     letter-spacing: 1px;
     margin: 0 auto;
 }
-
-
 
 #post-body img {
    width: 600px;
@@ -1869,10 +1869,6 @@ ul.products li img.attachment-shop_catalog{
     min-height: 0;
 }
 
-#shopping_cart_page_wrapper .row .boxed-row{
-        background-color: aquamarine;
-}
-
 table.shop_table{
      max-width: 916px; 
     margin: 0 auto;
@@ -1999,9 +1995,6 @@ img.attachment-shop_thumbnail:first-child{
     font-size: 10px;
 }
 
-#shopping_cart_page_wrapper{
-     border: 1px solid red;   
-}
 
 #shopping_cart_page_wrapper h3{
     font-family: 'playfair_displayregular', serif; 
@@ -2454,7 +2447,7 @@ td.actions input[type=submit]{
 .woocommerce #payment #place_order{
     margin-top: -100px;   
     font-size: 22px;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 
 .woocommerce #payment #place_order:hover{
@@ -2781,6 +2774,26 @@ button.close {
         width: 680px;
 }
 
+#CarrotModal .modal-dialog{
+     width: 410px;
+}
+
+#CarrotModal .modal-content{
+     padding: 30px 30px 60px 30px;   
+}
+
+#CarrotModal .modal-header{
+     padding-bottom: 60px;   
+}
+
+#CarrotModal .close{
+     margin: -40px -20px 0 0 ;   
+}
+
+#CarrotModal input[type=submit]{
+     margin-top: -20px;   
+}
+
 .modal-content{
   position: relative;
   border: 0;
@@ -2857,6 +2870,12 @@ button.close {
     float: left;
 }
 
+#CarrotModal #carrot-form input[type=text]{
+    width: 100%;
+    float: none;
+    clear: both;
+}
+
 #lname-book, #dateloc-book{
      margin-left: 45px;   
 }
@@ -2915,34 +2934,14 @@ button.close {
 
 @media (max-width: 1374px){
     
-    #learn_left{
-         width: 100%;   
-    }
-
-    #learn_right{
-         width: 100%;   
-    }
-
+    #learn .boxed-row{
+     padding: 0;   
+}
+    
     #speaker h4{
          padding: 0 30%;   
     }
       
-    
-      #speaker .film_thumb{ 
-        height: 300px;
-        margin: 60px auto;   
-        float: none;
-    }
-    
-    #speaker .film_thumb:nth-child(2){ 
-        margin: 60px auto;   
-        float: none;
-    }
-    
-    #speaker .film_thumb:nth-child(3){ 
-        margin: 60px auto;   
-        float: none;
-    }
     
     #speaker h5{
          margin-top: 90px;
@@ -2996,7 +2995,6 @@ button.close {
     
     #music_video_container{
          margin-top: -0px;  
-        
     }
     
     #music_video_container p{
@@ -3004,7 +3002,9 @@ button.close {
     }
     
     #news_calendar{
-         max-width: 950px;   
+        min-width: 340px;
+        width: 950px;
+        margin: 0 auto;
     }
     
      .blog_preview h5{
@@ -3013,22 +3013,25 @@ button.close {
          line-height: 22px;
         margin: 10px auto;
     }
+
+    
+    #blog_preview_container{
+        max-width: 630px;
+        min-width: 340px;
+    }
    
     #calendar_container{
-        width: 100%;
+        width: 295px;
         min-height: 650px;
-        clear: both;
-        border: 10px solid #fff;
-        border-top: 40px solid #fff;
-        
+        border: 10px solid #fff;  
+        margin-top: -10px;
     }
     
     #blog_preview_container .more-link{
         text-align: center;
-        margin: 0 0 0 0;
+        margin: -15px 0 0 0;
         font-size: 12px;
         line-height: 21px;
-        
     }
     
     footer{
@@ -3067,9 +3070,33 @@ button.close {
         margin-bottom: 30px;
     }
     
-   
+}
+
+@media (max-width: 1330px){
+ 
+    #learn_left{
+        margin: 0 auto;
+        clear: both;
+        float: none;
+    }
+    
+    #learn_right{
+        width: 582px;
+        margin: 0 auto;
+        clear: both;
+        float: none;
+    }
+    
+    #learn .container{
+         padding: 0;   
+    }
+    
+    #client-logos{
+         margin-left: 50px;   
+    }
     
 }
+
 
 @media (max-width: 1170){
     
@@ -3078,6 +3105,7 @@ button.close {
     }
     
     
+/*
     #blog_preview_container{
         width: 100%;
         margin: 0 auto;
@@ -3085,7 +3113,26 @@ button.close {
         float: none;
          padding: 0;
     }
+*/
     
+}
+
+@media (max-width: 1024px){
+      #speaker .film_thumb{ 
+        height: 300px;
+        margin: 60px auto;   
+        float: none;
+    }
+    
+    #speaker .film_thumb:nth-child(2){ 
+        margin: 60px auto;   
+        float: none;
+    }
+    
+    #speaker .film_thumb:nth-child(3){ 
+        margin: 60px auto;   
+        float: none;
+    }   
 }
 
 
@@ -3113,13 +3160,15 @@ button.close {
     }
     
     #calendar_container{
-        max-width: 625px;
+        width: 100%;
         margin: 0 auto;
         float: none;
     }
-    
+     #music_video_container p{
+    margin-top: 50px;
 }
-
+   
+}
 
 @media (max-width: 768px) {
     
@@ -3128,7 +3177,13 @@ button.close {
          left: -1px;   
     }
     
+    #music_video_container{
+    padding: 100px 0 0 0;    
+}
     
+     #music_video_container p{
+    margin-top: 30%;
+}
     .navbar-toggle{
          margin-right: 16px;   
     }
@@ -3164,7 +3219,10 @@ button.close {
         line-height: 25px;
     }
     
-   
+   #speaker .film_thumb{
+        height: 225px;
+
+    }
     
     .lg-hide{
      display: block; 
@@ -3223,7 +3281,7 @@ button.close {
          margin-left: 0;   
     }
     
-    #book-form{
+    #book-form, #carrot-form{
         text-align: left;
     }
     
@@ -3256,7 +3314,7 @@ button.close {
     }
     
     
-    .modal-body #book-form p label#modal-label-book {
+    .modal-body #book-form p label#modal-label-book, .modal-body #carrot-form p label#modal-label-book {
      font-size: 17px;
     letter-spacing: 1px;
         margin-top: -30px;
@@ -3356,11 +3414,17 @@ button.close {
 
     
     #learn_left{
-         width: 100%;   
+         width: 100%;
+        min-width: 350px;
     }
     
     #learn_right{
         width: 100%;
+        min-width: 350px;
+    }
+    
+    .violator{
+         min-width: 350px;   
     }
 
 
@@ -3540,10 +3604,6 @@ button.close {
          margin-top: 55px;   
     }
     
-    #speaker .film_thumb{
-        height: 225px;
-
-    }
     
     #book_container{
          height: 200px;   
@@ -3614,8 +3674,7 @@ button.close {
     
     #calendar_container{
         width: 100%;
-        margin: 30px 0 0 0;
-        float: none;
+        margin: 30px 0 0 -30px;
     }
     
     footer{
